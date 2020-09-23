@@ -76,6 +76,18 @@
         <element href="Retrait_des_livres.uml#_Oep98P2IEeq_2rwN6s0CgA"/>
         <layoutConstraint xsi:type="notation:Location" xmi:id="_OetBQf2IEeq_2rwN6s0CgA"/>
       </children>
+      <children xsi:type="notation:Shape" xmi:id="_1XDqkP2LEeq_2rwN6s0CgA" type="Operation_ClassOperationLabel">
+        <element href="Retrait_des_livres.uml#_1W1BEP2LEeq_2rwN6s0CgA"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_1XDqkf2LEeq_2rwN6s0CgA"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_6HM_0P2LEeq_2rwN6s0CgA" type="Operation_ClassOperationLabel">
+        <element href="Retrait_des_livres.uml#_6HBZoP2LEeq_2rwN6s0CgA"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_6HM_0f2LEeq_2rwN6s0CgA"/>
+      </children>
+      <children xsi:type="notation:Shape" xmi:id="_KlL1MP2MEeq_2rwN6s0CgA" type="Operation_ClassOperationLabel">
+        <element href="Retrait_des_livres.uml#_KlFHgP2MEeq_2rwN6s0CgA"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_KlL1Mf2MEeq_2rwN6s0CgA"/>
+      </children>
       <styles xsi:type="notation:TitleStyle" xmi:id="_BF7pVv2IEeq_2rwN6s0CgA"/>
       <styles xsi:type="notation:SortingStyle" xmi:id="_BF7pV_2IEeq_2rwN6s0CgA"/>
       <styles xsi:type="notation:FilteringStyle" xmi:id="_BF7pWP2IEeq_2rwN6s0CgA"/>
@@ -96,12 +108,20 @@
       <layoutConstraint xsi:type="notation:Location" xmi:id="_dXhPpP2IEeq_2rwN6s0CgA" y="15"/>
     </children>
     <children xsi:type="notation:BasicCompartment" xmi:id="_dXhPpf2IEeq_2rwN6s0CgA" type="Class_AttributeCompartment">
+      <children xsi:type="notation:Shape" xmi:id="_Cvj8wP2MEeq_2rwN6s0CgA" type="Property_ClassAttributeLabel">
+        <element href="Retrait_des_livres.uml#_CvfrUP2MEeq_2rwN6s0CgA"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_Cvj8wf2MEeq_2rwN6s0CgA"/>
+      </children>
       <styles xsi:type="notation:TitleStyle" xmi:id="_dXhPpv2IEeq_2rwN6s0CgA"/>
       <styles xsi:type="notation:SortingStyle" xmi:id="_dXhPp_2IEeq_2rwN6s0CgA"/>
       <styles xsi:type="notation:FilteringStyle" xmi:id="_dXhPqP2IEeq_2rwN6s0CgA"/>
       <layoutConstraint xsi:type="notation:Bounds" xmi:id="_dXhPqf2IEeq_2rwN6s0CgA"/>
     </children>
     <children xsi:type="notation:BasicCompartment" xmi:id="_dXhPqv2IEeq_2rwN6s0CgA" type="Class_OperationCompartment">
+      <children xsi:type="notation:Shape" xmi:id="_yPOW8P2LEeq_2rwN6s0CgA" type="Operation_ClassOperationLabel">
+        <element href="Retrait_des_livres.uml#_yPLToP2LEeq_2rwN6s0CgA"/>
+        <layoutConstraint xsi:type="notation:Location" xmi:id="_yPOW8f2LEeq_2rwN6s0CgA"/>
+      </children>
       <styles xsi:type="notation:TitleStyle" xmi:id="_dXhPq_2IEeq_2rwN6s0CgA"/>
       <styles xsi:type="notation:SortingStyle" xmi:id="_dXhPrP2IEeq_2rwN6s0CgA"/>
       <styles xsi:type="notation:FilteringStyle" xmi:id="_dXhPrf2IEeq_2rwN6s0CgA"/>

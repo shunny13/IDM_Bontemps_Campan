@@ -16,6 +16,18 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Oep98P2IEeq_2rwN6s0CgA" name="showBorrowableBooks">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_Sd8eAP2IEeq_2rwN6s0CgA" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1W1BEP2LEeq_2rwN6s0CgA" name="selectBook" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4Gz1YP2LEeq_2rwN6s0CgA" type="_dXgBgP2IEeq_2rwN6s0CgA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6HBZoP2LEeq_2rwN6s0CgA" name="selectAllBooks"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KlFHgP2MEeq_2rwN6s0CgA" name="findBook">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nke34P2MEeq_2rwN6s0CgA" type="_dXgBgP2IEeq_2rwN6s0CgA"/>
+    </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_dXgBgP2IEeq_2rwN6s0CgA" name="Book"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dXgBgP2IEeq_2rwN6s0CgA" name="Book">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_CvfrUP2MEeq_2rwN6s0CgA" name="state">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yPLToP2LEeq_2rwN6s0CgA" name="changeState"/>
+  </packagedElement>
 </uml:Model>
