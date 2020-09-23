@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KR3KMP2EEeq_2rwN6s0CgA" name="TP2">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_KSQy0P2EEeq_2rwN6s0CgA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0Y1EkP2HEeq_2rwN6s0CgA" name="Student"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0qWSYP2HEeq_2rwN6s0CgA" name="Benevole">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-WPI4P2HEeq_2rwN6s0CgA" name="searchStudent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AVmYkP2IEeq_2rwN6s0CgA" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BF5NEP2IEeq_2rwN6s0CgA" name="Application">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IDMWYP2IEeq_2rwN6s0CgA" name="showStudentInfos">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LuVLYP2IEeq_2rwN6s0CgA" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Oep98P2IEeq_2rwN6s0CgA" name="showBorrowableBooks">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Sd8eAP2IEeq_2rwN6s0CgA" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dXgBgP2IEeq_2rwN6s0CgA" name="Book"/>
+</uml:Model>
