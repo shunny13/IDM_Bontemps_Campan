@@ -20,10 +20,6 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_RZDooP1_Eeq_2rwN6s0CgA" name="Application">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kV0dUP_fEeqGoqwuaS_QwA" name="ListOfVolountary" visibility="private" type="_VhnO4P1-Eeq_2rwN6s0CgA"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_g-pQsv_gEeqGoqwuaS_QwA" name="volountary" type="_VhnO4P1-Eeq_2rwN6s0CgA" association="_g-opoP_gEeqGoqwuaS_QwA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g-pQs__gEeqGoqwuaS_QwA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g-pQtP_gEeqGoqwuaS_QwA" value="*"/>
-    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_NxOpgP2DEeq_2rwN6s0CgA" name="isVolountary" visibility="public">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_cgyOMP2DEeq_2rwN6s0CgA" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
@@ -32,11 +28,15 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_psLBgP_gEeqGoqwuaS_QwA" name="chooseActivity"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_g-opoP_gEeqGoqwuaS_QwA" memberEnd="_g-pQsv_gEeqGoqwuaS_QwA _g-p3wP_gEeqGoqwuaS_QwA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g-pQsP_gEeqGoqwuaS_QwA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g-pQsf_gEeqGoqwuaS_QwA" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VSLRcP__EeqGoqwuaS_QwA" memberEnd="_VSL4gv__EeqGoqwuaS_QwA _VSMfkv__EeqGoqwuaS_QwA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VSL4gP__EeqGoqwuaS_QwA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VSL4gf__EeqGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_g-p3wP_gEeqGoqwuaS_QwA" name="application" type="_RZDooP1_Eeq_2rwN6s0CgA" association="_g-opoP_gEeqGoqwuaS_QwA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VSMfkv__EeqGoqwuaS_QwA" name="volountary" type="_VhnO4P1-Eeq_2rwN6s0CgA" association="_VSLRcP__EeqGoqwuaS_QwA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XVUN4P__EeqGoqwuaS_QwA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XVa7kP__EeqGoqwuaS_QwA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_VSL4gv__EeqGoqwuaS_QwA" name="application" type="_RZDooP1_Eeq_2rwN6s0CgA" association="_VSLRcP__EeqGoqwuaS_QwA"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_EG_5gP17Eeqy84cM4Uhx6w">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EHBHoP17Eeqy84cM4Uhx6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
