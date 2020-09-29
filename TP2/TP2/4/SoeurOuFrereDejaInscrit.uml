@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_pBSwUAKEEeufX-KuTxw1aA" name="SoeurOuFrereDejaInscrit">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_pB3_IAKEEeufX-KuTxw1aA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uRYJ4AKEEeufX-KuTxw1aA" name="Student">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G41AwAKFEeufX-KuTxw1aA" name="answerBrothersAndSisters">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_MxZ9sAKFEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rYe0sAKFEeufX-KuTxw1aA" name="answerBrotherSisterFirstName">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yZEikAKFEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zNnk8AKFEeufX-KuTxw1aA" name="answerBrotherSisterLastName">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_85IoAAKFEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_u7HDYAKEEeufX-KuTxw1aA" name="Voluntary">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FsESsAKFEeufX-KuTxw1aA" name="askForBrothersAndSisters"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RV7RwAKFEeufX-KuTxw1aA" name="askForBrotherSisterName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BV8KgAKGEeufX-KuTxw1aA" name="fillBrotherSisterName">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_E5IkcAKGEeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_GOOvIAKGEeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Rho9EAKGEeufX-KuTxw1aA" name="searchForMembership"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZN9vkAKGEeufX-KuTxw1aA" name="chooseMembership"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fKmtIAKGEeufX-KuTxw1aA" name="verifyMembership"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1_EjcAKGEeufX-KuTxw1aA" name="confirmSheet"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xW6-gAKEEeufX-KuTxw1aA" name="Application">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IS8_8AKGEeufX-KuTxw1aA" name="searchForBrotherSisterName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WV4IIAKGEeufX-KuTxw1aA" name="showMembershipList"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_a4eJkAKGEeufX-KuTxw1aA" name="showMembership"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4p8OQAKGEeufX-KuTxw1aA" name="linkSheets"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9Db-EAKGEeufX-KuTxw1aA" name="showNoPayment"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2B3DoAKEEeufX-KuTxw1aA" memberEnd="_2B3DowKEEeufX-KuTxw1aA _2B8jMAKEEeufX-KuTxw1aA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2B3DoQKEEeufX-KuTxw1aA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2B3DogKEEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2B8jMAKEEeufX-KuTxw1aA" name="voluntary" type="_u7HDYAKEEeufX-KuTxw1aA" association="_2B3DoAKEEeufX-KuTxw1aA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2B3DowKEEeufX-KuTxw1aA" name="application" type="_xW6-gAKEEeufX-KuTxw1aA" association="_2B3DoAKEEeufX-KuTxw1aA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_k-wdEAKGEeufX-KuTxw1aA" memberEnd="_k-xEIgKGEeufX-KuTxw1aA _k-xEJQKGEeufX-KuTxw1aA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k-xEIAKGEeufX-KuTxw1aA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k-xEIQKGEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_k-xEJQKGEeufX-KuTxw1aA" name="student" type="_uRYJ4AKEEeufX-KuTxw1aA" association="_k-wdEAKGEeufX-KuTxw1aA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_k-xEIgKGEeufX-KuTxw1aA" name="voluntary" type="_u7HDYAKEEeufX-KuTxw1aA" association="_k-wdEAKGEeufX-KuTxw1aA"/>
+  </packagedElement>
+</uml:Model>

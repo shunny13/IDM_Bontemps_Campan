@@ -13,15 +13,9 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SlB_4AHaEeuanJSOFqocpw" name="Voluntary">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fUhU0AHbEeuanJSOFqocpw" name="application" type="_WmVSIAHaEeuanJSOFqocpw" association="_fUgtwAHbEeuanJSOFqocpw"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_sAppMAHbEeuanJSOFqocpw" name="tellPrice">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_uwukIAHbEeuanJSOFqocpw" type="_RqGosAHaEeuanJSOFqocpw"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_34Ct8AHbEeuanJSOFqocpw" name="askMeanOfPayment">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_B6N9gAHcEeuanJSOFqocpw" type="_RqGosAHaEeuanJSOFqocpw"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_T1P_sAHcEeuanJSOFqocpw" name="askDeposit">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WKyTsAHcEeuanJSOFqocpw" type="_RqGosAHaEeuanJSOFqocpw"/>
-    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sAppMAHbEeuanJSOFqocpw" name="tellPrice"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_34Ct8AHbEeuanJSOFqocpw" name="askMeanOfPayment"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_T1P_sAHcEeuanJSOFqocpw" name="askDeposit"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_2IEIoAHcEeuanJSOFqocpw" name="selectMeansOfPayment">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_5AoRMAHcEeuanJSOFqocpw" type="_YUHpoAHaEeuanJSOFqocpw"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_7BFtEAHcEeuanJSOFqocpw">
@@ -31,17 +25,11 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_K2PA0AHdEeuanJSOFqocpw" name="fillCheckNumber">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlSsgAHdEeuanJSOFqocpw" type="_aTncMAHaEeuanJSOFqocpw"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_RPFZQAHdEeuanJSOFqocpw" name="printMemberSheet">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Y4TNYAHdEeuanJSOFqocpw" type="_RqGosAHaEeuanJSOFqocpw"/>
-    </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_aRcxoAHdEeuanJSOFqocpw" name="makeSign">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cri1gAHdEeuanJSOFqocpw" type="_RqGosAHaEeuanJSOFqocpw"/>
-    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RPFZQAHdEeuanJSOFqocpw" name="printMemberSheet"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aRcxoAHdEeuanJSOFqocpw" name="makeSign"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_jdY8wAHdEeuanJSOFqocpw" name="tidySheet"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_oK08QAHdEeuanJSOFqocpw" name="giveSheet"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_ygaQAAHdEeuanJSOFqocpw" name="autorizeBookRecovery">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0cilgAHdEeuanJSOFqocpw" type="_RqGosAHaEeuanJSOFqocpw"/>
-    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ygaQAAHdEeuanJSOFqocpw" name="autorizeBookRecovery"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WmVSIAHaEeuanJSOFqocpw" name="Application">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_gZ7dsAHbEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_gZ5ogAHbEeuanJSOFqocpw">

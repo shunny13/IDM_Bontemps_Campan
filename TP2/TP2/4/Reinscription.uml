@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LFyfgAJ8EeufX-KuTxw1aA" name="Reinscription">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_LHkoMAJ8EeufX-KuTxw1aA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Pm7vcAJ8EeufX-KuTxw1aA" name="Student">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IkgZEAJ9EeufX-KuTxw1aA" name="lastName" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IkhnMAJ9EeufX-KuTxw1aA" name="firstName" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4eY0oAJ9EeufX-KuTxw1aA" name="birthDate" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9ijSEAJ9EeufX-KuTxw1aA" name="address" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GCWokAKBEeufX-KuTxw1aA" name="takeBookOrNot">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_GCWokQKBEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zb0V0AKBEeufX-KuTxw1aA" name="answerParentsChanges">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NJ1MIAKCEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G64hIAKDEeufX-KuTxw1aA" name="donate">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_G64hIQKDEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G65IMAKDEeufX-KuTxw1aA" name="subscribe">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_G65IMQKDEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Yi45oAKDEeufX-KuTxw1aA" name="chooseOtherTools">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yi45oQKDEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yi45ogKDEeufX-KuTxw1aA" type="_O2XJ8AKDEeufX-KuTxw1aA"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QcsSwAJ8EeufX-KuTxw1aA" name="Voluntary">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_o94woAJ8EeufX-KuTxw1aA" name="askForName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_r_IUEAJ8EeufX-KuTxw1aA" name="chooseAction"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sJhwwAJ9EeufX-KuTxw1aA" name="askForBirthDate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_w8lQEAJ9EeufX-KuTxw1aA" name="askForAddress"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Le0YoAJ-EeufX-KuTxw1aA" name="checkExistingStudent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WKYjcAJ-EeufX-KuTxw1aA" name="reuseSameSheet"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yJ47QAJ-EeufX-KuTxw1aA" name="chooseStudyingLevel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G_AI8AJ_EeufX-KuTxw1aA" name="verifyFilledSheet"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YsDkEAKAEeufX-KuTxw1aA" name="chooseOptions"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LMoVEAKBEeufX-KuTxw1aA" name="askForBooks"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_V-0FQAKBEeufX-KuTxw1aA" name="askForParentsChanges"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uI8G8AKBEeufX-KuTxw1aA" name="updateParentsInformations">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yb5w8AKBEeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AbNH8AKDEeufX-KuTxw1aA" name="askForDonation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AbO9IAKDEeufX-KuTxw1aA" name="askForSubscription"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AbQLQAKDEeufX-KuTxw1aA" name="askForContribution"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LYO2MAKDEeufX-KuTxw1aA" name="fillDonation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LYO2MQKDEeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LYQrYAKDEeufX-KuTxw1aA" name="fillSubscription"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XgS0MAKDEeufX-KuTxw1aA" name="askForOtherTools">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N-sssAKEEeufX-KuTxw1aA" type="_O2XJ8AKDEeufX-KuTxw1aA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ReJPEAKEEeufX-KuTxw1aA" name="fillOptionableTools">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ReJPEQKEEeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMap"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SqiqYAJ8EeufX-KuTxw1aA" name="Application">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_v08LMgKAEeufX-KuTxw1aA" name="book" type="_uRUcUAKAEeufX-KuTxw1aA" association="_v07kIAKAEeufX-KuTxw1aA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v08LMwKAEeufX-KuTxw1aA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v08LNAKAEeufX-KuTxw1aA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Svn6ggKDEeufX-KuTxw1aA" name="optionabletool" type="_O2XJ8AKDEeufX-KuTxw1aA" association="_SvnTcAKDEeufX-KuTxw1aA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Svn6gwKDEeufX-KuTxw1aA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Svn6hAKDEeufX-KuTxw1aA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eJxGwAJ8EeufX-KuTxw1aA" name="askForName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gDXssAJ8EeufX-KuTxw1aA" name="askForAction"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QSD6oAJ9EeufX-KuTxw1aA" name="verifySignIn">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QSD6oQJ9EeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QSD6ogJ9EeufX-KuTxw1aA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aU3cUAJ9EeufX-KuTxw1aA" name="studentAlreadyExists"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zSC2IAJ-EeufX-KuTxw1aA" name="askForNewStudyingLevel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9giDYAJ-EeufX-KuTxw1aA" name="showFilledSheet"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oVzgIAKAEeufX-KuTxw1aA" name="createBookList">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_oVzgIQKAEeufX-KuTxw1aA" direction="return">
+        <type xmi:type="uml:Class" href="PremiereInscription.uml#_N1xIUAHCEeuYKLnCSau0Lg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVzgIgKAEeufX-KuTxw1aA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVzgIwKAEeufX-KuTxw1aA" value="*"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rzvmoAKAEeufX-KuTxw1aA" name="addNewBook">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rzvmoQKAEeufX-KuTxw1aA">
+        <type xmi:type="uml:Class" href="PremiereInscription.uml#_N1xIUAHCEeuYKLnCSau0Lg"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u7sy4AJ8EeufX-KuTxw1aA" memberEnd="_u7uBAQJ8EeufX-KuTxw1aA _u7vPIgJ8EeufX-KuTxw1aA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u7tZ8AJ8EeufX-KuTxw1aA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u7uBAAJ8EeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u7vPIgJ8EeufX-KuTxw1aA" name="voluntary" type="_QcsSwAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u7uBAQJ8EeufX-KuTxw1aA" name="student" type="_Pm7vcAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RyfLkAJ9EeufX-KuTxw1aA" memberEnd="_RyfyoQJ9EeufX-KuTxw1aA _RyfypAJ9EeufX-KuTxw1aA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyfLkQJ9EeufX-KuTxw1aA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RyfyoAJ9EeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RyfypAJ9EeufX-KuTxw1aA" name="voluntary" type="_QcsSwAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RyfyoQJ9EeufX-KuTxw1aA" name="application" type="_SqiqYAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uRUcUAKAEeufX-KuTxw1aA" name="Book"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_v07kIAKAEeufX-KuTxw1aA" memberEnd="_v08LMgKAEeufX-KuTxw1aA _v08LNQKAEeufX-KuTxw1aA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v08LMAKAEeufX-KuTxw1aA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_v08LMQKAEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_v08LNQKAEeufX-KuTxw1aA" name="application" type="_SqiqYAJ8EeufX-KuTxw1aA" association="_v07kIAKAEeufX-KuTxw1aA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O2XJ8AKDEeufX-KuTxw1aA" name="OptionableTool"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SvnTcAKDEeufX-KuTxw1aA" memberEnd="_Svn6ggKDEeufX-KuTxw1aA _Svn6hQKDEeufX-KuTxw1aA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Svn6gAKDEeufX-KuTxw1aA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Svn6gQKDEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Svn6hQKDEeufX-KuTxw1aA" name="application" type="_SqiqYAJ8EeufX-KuTxw1aA" association="_SvnTcAKDEeufX-KuTxw1aA"/>
+  </packagedElement>
+</uml:Model>
