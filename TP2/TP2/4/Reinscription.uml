@@ -44,6 +44,8 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_QcsSwAJ8EeufX-KuTxw1aA" name="Voluntary">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u7uBAQJ8EeufX-KuTxw1aA" name="student" type="_Pm7vcAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RyfyoQJ9EeufX-KuTxw1aA" name="application" type="_SqiqYAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_o94woAJ8EeufX-KuTxw1aA" name="askForName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_r_IUEAJ8EeufX-KuTxw1aA" name="chooseAction"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_sJhwwAJ9EeufX-KuTxw1aA" name="askForBirthDate"/>
@@ -79,11 +81,11 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SqiqYAJ8EeufX-KuTxw1aA" name="Application">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_v08LMgKAEeufX-KuTxw1aA" name="book" type="_uRUcUAKAEeufX-KuTxw1aA" association="_v07kIAKAEeufX-KuTxw1aA">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_v08LMgKAEeufX-KuTxw1aA" name="books" type="_uRUcUAKAEeufX-KuTxw1aA" association="_v07kIAKAEeufX-KuTxw1aA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v08LMwKAEeufX-KuTxw1aA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v08LNAKAEeufX-KuTxw1aA" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Svn6ggKDEeufX-KuTxw1aA" name="optionabletool" type="_O2XJ8AKDEeufX-KuTxw1aA" association="_SvnTcAKDEeufX-KuTxw1aA">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Svn6ggKDEeufX-KuTxw1aA" name="optionableTools" type="_O2XJ8AKDEeufX-KuTxw1aA" association="_SvnTcAKDEeufX-KuTxw1aA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Svn6gwKDEeufX-KuTxw1aA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Svn6hAKDEeufX-KuTxw1aA" value="*"/>
     </ownedAttribute>
@@ -118,14 +120,12 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u7uBAAJ8EeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_u7vPIgJ8EeufX-KuTxw1aA" name="voluntary" type="_QcsSwAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_u7uBAQJ8EeufX-KuTxw1aA" name="student" type="_Pm7vcAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_RyfLkAJ9EeufX-KuTxw1aA" memberEnd="_RyfyoQJ9EeufX-KuTxw1aA _RyfypAJ9EeufX-KuTxw1aA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyfLkQJ9EeufX-KuTxw1aA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RyfyoAJ9EeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_RyfypAJ9EeufX-KuTxw1aA" name="voluntary" type="_QcsSwAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RyfyoQJ9EeufX-KuTxw1aA" name="application" type="_SqiqYAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_uRUcUAKAEeufX-KuTxw1aA" name="Book"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_v07kIAKAEeufX-KuTxw1aA" memberEnd="_v08LMgKAEeufX-KuTxw1aA _v08LNQKAEeufX-KuTxw1aA">

@@ -13,6 +13,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SlB_4AHaEeuanJSOFqocpw" name="Voluntary">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fUhU0AHbEeuanJSOFqocpw" name="application" type="_WmVSIAHaEeuanJSOFqocpw" association="_fUgtwAHbEeuanJSOFqocpw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dWb3ggHbEeuanJSOFqocpw" name="student" type="_RqGosAHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_sAppMAHbEeuanJSOFqocpw" name="tellPrice"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_34Ct8AHbEeuanJSOFqocpw" name="askMeanOfPayment"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_T1P_sAHcEeuanJSOFqocpw" name="askDeposit"/>
@@ -32,11 +33,8 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ygaQAAHdEeuanJSOFqocpw" name="autorizeBookRecovery"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WmVSIAHaEeuanJSOFqocpw" name="Application">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_gZ7dsAHbEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_gZ5ogAHbEeuanJSOFqocpw">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gZ7dsAHbEeuanJSOFqocpw" name="paymentList" type="_YUHpoAHaEeuanJSOFqocpw" association="_gZ5ogAHbEeuanJSOFqocpw">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gZ8r0AHbEeuanJSOFqocpw" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_DZSjkAHcEeuanJSOFqocpw" name="PaymentList" type="_YUHpoAHaEeuanJSOFqocpw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GzbIIAHcEeuanJSOFqocpw" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_p9UfgAHbEeuanJSOFqocpw" name="showPrice"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_gptJoAHcEeuanJSOFqocpw" name="showHdfAmount"/>
@@ -45,56 +43,25 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_YUHpoAHaEeuanJSOFqocpw" name="Payment" isAbstract="true"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_aTncMAHaEeuanJSOFqocpw" name="Check">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_temDUAHaEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_tejnEAHaEeuanJSOFqocpw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_jTa8MAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_gg8hIAHaEeuanJSOFqocpw" name="Cash">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_uPG6QgHaEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_uPGTMAHaEeuanJSOFqocpw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_is8LAAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_muKRUAHaEeuanJSOFqocpw" name="BankTransfer">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vAVi4wHaEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_vAVi4AHaEeuanJSOFqocpw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_h3JygAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_qnFDoAHaEeuanJSOFqocpw" name="Sepa">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_vqR3wQHaEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_vqRQsAHaEeuanJSOFqocpw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_g38_UAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_rrJvwAHaEeuanJSOFqocpw" name="Hdf">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_wzm3UgHaEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw" association="_wzmQQAHaEeuanJSOFqocpw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_tejnEAHaEeuanJSOFqocpw" visibility="package" memberEnd="_temDUAHaEeuanJSOFqocpw _temqYgHaEeuanJSOFqocpw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_telcQAHaEeuanJSOFqocpw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_telcQQHaEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_temqYgHaEeuanJSOFqocpw" name="check" type="_aTncMAHaEeuanJSOFqocpw" association="_tejnEAHaEeuanJSOFqocpw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_uPGTMAHaEeuanJSOFqocpw" memberEnd="_uPG6QgHaEeuanJSOFqocpw _uPHhUQHaEeuanJSOFqocpw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uPG6QAHaEeuanJSOFqocpw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uPG6QQHaEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_uPHhUQHaEeuanJSOFqocpw" name="cash" type="_gg8hIAHaEeuanJSOFqocpw" association="_uPGTMAHaEeuanJSOFqocpw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_vAVi4AHaEeuanJSOFqocpw" memberEnd="_vAVi4wHaEeuanJSOFqocpw _vAVi5gHaEeuanJSOFqocpw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vAVi4QHaEeuanJSOFqocpw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vAVi4gHaEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_vAVi5gHaEeuanJSOFqocpw" name="banktransfer" type="_muKRUAHaEeuanJSOFqocpw" association="_vAVi4AHaEeuanJSOFqocpw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_vqRQsAHaEeuanJSOFqocpw" memberEnd="_vqR3wQHaEeuanJSOFqocpw _vqR3xAHaEeuanJSOFqocpw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vqRQsQHaEeuanJSOFqocpw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vqR3wAHaEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_vqR3xAHaEeuanJSOFqocpw" name="sepa" type="_qnFDoAHaEeuanJSOFqocpw" association="_vqRQsAHaEeuanJSOFqocpw"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_wzmQQAHaEeuanJSOFqocpw" memberEnd="_wzm3UgHaEeuanJSOFqocpw _wzx2cAHaEeuanJSOFqocpw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wzm3UAHaEeuanJSOFqocpw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wzm3UQHaEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_wzx2cAHaEeuanJSOFqocpw" name="hdf" type="_rrJvwAHaEeuanJSOFqocpw" association="_wzmQQAHaEeuanJSOFqocpw"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_ftL1UAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_dWbQcAHbEeuanJSOFqocpw" memberEnd="_dWb3ggHbEeuanJSOFqocpw _dWb3hQHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dWb3gAHbEeuanJSOFqocpw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dWb3gQHbEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dWb3hQHbEeuanJSOFqocpw" name="voluntary" type="_SlB_4AHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_dWb3ggHbEeuanJSOFqocpw" name="student" type="_RqGosAHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_fUgtwAHbEeuanJSOFqocpw" memberEnd="_fUhU0AHbEeuanJSOFqocpw _fUhU0wHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fUgtwQHbEeuanJSOFqocpw" source="org.eclipse.papyrus">

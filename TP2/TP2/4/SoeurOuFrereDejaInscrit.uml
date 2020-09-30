@@ -21,6 +21,8 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_u7HDYAKEEeufX-KuTxw1aA" name="Voluntary">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_k-xEJQKGEeufX-KuTxw1aA" name="student" type="_uRYJ4AKEEeufX-KuTxw1aA" association="_k-wdEAKGEeufX-KuTxw1aA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2B3DowKEEeufX-KuTxw1aA" name="application" type="_xW6-gAKEEeufX-KuTxw1aA" association="_2B3DoAKEEeufX-KuTxw1aA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_FsESsAKFEeufX-KuTxw1aA" name="askForBrothersAndSisters"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RV7RwAKFEeufX-KuTxw1aA" name="askForBrotherSisterName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_BV8KgAKGEeufX-KuTxw1aA" name="fillBrotherSisterName">
@@ -37,8 +39,19 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_1_EjcAKGEeufX-KuTxw1aA" name="confirmSheet"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_xW6-gAKEEeufX-KuTxw1aA" name="Application">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_IS8_8AKGEeufX-KuTxw1aA" name="searchForBrotherSisterName"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_WV4IIAKGEeufX-KuTxw1aA" name="showMembershipList"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IS8_8AKGEeufX-KuTxw1aA" name="searchForBrotherSisterName">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_9pqM8AL8Eeu0Hetlq02o5A">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_EGXKoAL9Eeu0Hetlq02o5A">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WV4IIAKGEeufX-KuTxw1aA" name="showMembershipList">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJQT4AL9Eeu0Hetlq02o5A">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_a4eJkAKGEeufX-KuTxw1aA" name="showMembership"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4p8OQAKGEeufX-KuTxw1aA" name="linkSheets"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_9Db-EAKGEeufX-KuTxw1aA" name="showNoPayment"/>
@@ -48,13 +61,11 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2B3DogKEEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_2B8jMAKEEeufX-KuTxw1aA" name="voluntary" type="_u7HDYAKEEeufX-KuTxw1aA" association="_2B3DoAKEEeufX-KuTxw1aA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_2B3DowKEEeufX-KuTxw1aA" name="application" type="_xW6-gAKEEeufX-KuTxw1aA" association="_2B3DoAKEEeufX-KuTxw1aA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_k-wdEAKGEeufX-KuTxw1aA" memberEnd="_k-xEIgKGEeufX-KuTxw1aA _k-xEJQKGEeufX-KuTxw1aA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_k-wdEAKGEeufX-KuTxw1aA" visibility="private" memberEnd="_k-xEIgKGEeufX-KuTxw1aA _k-xEJQKGEeufX-KuTxw1aA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k-xEIAKGEeufX-KuTxw1aA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k-xEIQKGEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_k-xEJQKGEeufX-KuTxw1aA" name="student" type="_uRYJ4AKEEeufX-KuTxw1aA" association="_k-wdEAKGEeufX-KuTxw1aA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_k-xEIgKGEeufX-KuTxw1aA" name="voluntary" type="_u7HDYAKEEeufX-KuTxw1aA" association="_k-wdEAKGEeufX-KuTxw1aA"/>
   </packagedElement>
 </uml:Model>

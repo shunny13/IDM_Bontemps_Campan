@@ -136,7 +136,7 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xW7lowKEEeufX-KuTxw1aA"/>
     </children>
     <element xmi:type="uml:Class" href="SoeurOuFrereDejaInscrit.uml#_xW6-gAKEEeufX-KuTxw1aA"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xW7lkQKEEeufX-KuTxw1aA" x="500" y="400" width="321"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xW7lkQKEEeufX-KuTxw1aA" x="500" y="400" width="441"/>
   </children>
   <styles xmi:type="notation:StringValueStyle" xmi:id="_pBmSUQKEEeufX-KuTxw1aA" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_pBmSUgKEEeufX-KuTxw1aA"/>
@@ -152,6 +152,9 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_2B-_dgKEEeufX-KuTxw1aA" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_2B_mgAKEEeufX-KuTxw1aA" type="Association_TargetRoleLabel">
+      <styles xmi:type="notation:StringListValueStyle" xmi:id="_TjejcAL-Eeu0Hetlq02o5A" name="maskLabel">
+        <stringListValue>derived</stringListValue>
+      </styles>
       <layoutConstraint xmi:type="notation:Location" xmi:id="_2B_mgQKEEeufX-KuTxw1aA" x="-2" y="-39"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_2B_mggKEEeufX-KuTxw1aA" type="Association_SourceRoleLabel">
@@ -167,7 +170,7 @@
     <element xmi:type="uml:Association" href="SoeurOuFrereDejaInscrit.uml#_2B3DoAKEEeufX-KuTxw1aA"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_2B-_cgKEEeufX-KuTxw1aA" points="[700, 240, -643984, -643984]$[560, 400, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2CJXgAKEEeufX-KuTxw1aA" id="(0.15748031496062992,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2CJXgQKEEeufX-KuTxw1aA" id="(0.3115264797507788,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_2CJXgQKEEeufX-KuTxw1aA" id="(0.22675736961451248,0.0)"/>
   </edges>
   <edges xmi:type="notation:Connector" xmi:id="_k-0ugAKGEeufX-KuTxw1aA" type="Association_Edge" source="_uRYw8AKEEeufX-KuTxw1aA" target="_u7HqcAKEEeufX-KuTxw1aA">
     <children xmi:type="notation:DecorationNode" xmi:id="_k-0ugwKGEeufX-KuTxw1aA" type="Association_StereotypeLabel">
@@ -180,6 +183,9 @@
       <layoutConstraint xmi:type="notation:Location" xmi:id="_k-0uiAKGEeufX-KuTxw1aA" y="-20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_k-0uiQKGEeufX-KuTxw1aA" type="Association_SourceRoleLabel">
+      <styles xmi:type="notation:StringListValueStyle" xmi:id="_765IkAL9Eeu0Hetlq02o5A" name="maskLabel">
+        <stringListValue>derived</stringListValue>
+      </styles>
       <layoutConstraint xmi:type="notation:Location" xmi:id="_k-0uigKGEeufX-KuTxw1aA" y="20"/>
     </children>
     <children xmi:type="notation:DecorationNode" xmi:id="_k-0uiwKGEeufX-KuTxw1aA" type="Association_SourceMultiplicityLabel">

@@ -39,6 +39,8 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_FhwyIAG_EeuYKLnCSau0Lg" name="Voluntary">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HnxKcgHBEeuYKLnCSau0Lg" name="application" type="_yES3YAG_EeuYKLnCSau0Lg" association="_HnuuMAHBEeuYKLnCSau0Lg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NZrwoAG_EeuYKLnCSau0Lg" name="student" type="_Ezn5wAG_EeuYKLnCSau0Lg" association="_NZjNwAG_EeuYKLnCSau0Lg"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5D21EAHAEeuYKLnCSau0Lg" name="chooseAction"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_5w6vYAHAEeuYKLnCSau0Lg" name="fillName" visibility="public"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_9J3oMAHAEeuYKLnCSau0Lg" name="askForName"/>
@@ -78,15 +80,14 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NZrJkAG_EeuYKLnCSau0Lg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NZrJkQG_EeuYKLnCSau0Lg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_NZrwoAG_EeuYKLnCSau0Lg" name="student" type="_Ezn5wAG_EeuYKLnCSau0Lg" association="_NZjNwAG_EeuYKLnCSau0Lg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_NZsXsgG_EeuYKLnCSau0Lg" name="voluntary" type="_FhwyIAG_EeuYKLnCSau0Lg" association="_NZjNwAG_EeuYKLnCSau0Lg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_yES3YAG_EeuYKLnCSau0Lg" name="Application">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_PtHEcAHCEeuYKLnCSau0Lg" name="book" type="_N1xIUAHCEeuYKLnCSau0Lg" association="_Ps8FUAHCEeuYKLnCSau0Lg">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PtHEcAHCEeuYKLnCSau0Lg" name="books" type="_N1xIUAHCEeuYKLnCSau0Lg" association="_Ps8FUAHCEeuYKLnCSau0Lg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VBGtoAHCEeuYKLnCSau0Lg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XeJ-4AHCEeuYKLnCSau0Lg" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fB3gkAHFEeuYKLnCSau0Lg" name="optionabletool" type="_da7X8AHFEeuYKLnCSau0Lg" association="_fBshcAHFEeuYKLnCSau0Lg">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fB3gkAHFEeuYKLnCSau0Lg" name="optionableTools" type="_da7X8AHFEeuYKLnCSau0Lg" association="_fBshcAHFEeuYKLnCSau0Lg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hEdqcAHFEeuYKLnCSau0Lg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hEgGsAHFEeuYKLnCSau0Lg" value="*"/>
     </ownedAttribute>
@@ -123,7 +124,6 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hnv8UAHBEeuYKLnCSau0Lg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HnwjYAHBEeuYKLnCSau0Lg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_HnxKcgHBEeuYKLnCSau0Lg" name="application" type="_yES3YAG_EeuYKLnCSau0Lg" association="_HnuuMAHBEeuYKLnCSau0Lg"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_HnwjYQHBEeuYKLnCSau0Lg" name="voluntary" type="_FhwyIAG_EeuYKLnCSau0Lg" association="_HnuuMAHBEeuYKLnCSau0Lg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_N1xIUAHCEeuYKLnCSau0Lg" name="Book"/>
