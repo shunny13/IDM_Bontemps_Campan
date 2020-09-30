@@ -34,6 +34,7 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_quQtsQABEeuGoqwuaS_QwA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_quQtsgABEeuGoqwuaS_QwA" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ggjHAwACEeuGoqwuaS_QwA" name="volountary" type="_quSi0AABEeuGoqwuaS_QwA" association="_ggif8AACEeuGoqwuaS_QwA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_quQtswABEeuGoqwuaS_QwA" name="showStudentInfos">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_quQttAABEeuGoqwuaS_QwA" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -201,6 +202,8 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_quSi0gABEeuGoqwuaS_QwA" name="student">
       <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Mp_MRQACEeuGoqwuaS_QwA" name="student" type="_quR7wAABEeuGoqwuaS_QwA" association="_Mp-lMAACEeuGoqwuaS_QwA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ggjHAAACEeuGoqwuaS_QwA" name="application" type="_quQtoAABEeuGoqwuaS_QwA" association="_ggif8AACEeuGoqwuaS_QwA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_quSi0wABEeuGoqwuaS_QwA" name="searchStudent">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_quSi1AABEeuGoqwuaS_QwA">
         <type xmi:type="uml:Class" href="Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
@@ -255,15 +258,12 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Mp_MQAACEeuGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Mp_MQQACEeuGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_Mp_MRQACEeuGoqwuaS_QwA" name="student" type="_quR7wAABEeuGoqwuaS_QwA" association="_Mp-lMAACEeuGoqwuaS_QwA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Mp_MQgACEeuGoqwuaS_QwA" name="volountary" type="_quSi0AABEeuGoqwuaS_QwA" association="_Mp-lMAACEeuGoqwuaS_QwA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_ggif8AACEeuGoqwuaS_QwA" memberEnd="_ggjHAAACEeuGoqwuaS_QwA _ggjHAwACEeuGoqwuaS_QwA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ggif8QACEeuGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ggif8gACEeuGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ggjHAwACEeuGoqwuaS_QwA" name="volountary" type="_quSi0AABEeuGoqwuaS_QwA" association="_ggif8AACEeuGoqwuaS_QwA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ggjHAAACEeuGoqwuaS_QwA" name="application" type="_quQtoAABEeuGoqwuaS_QwA" association="_ggif8AACEeuGoqwuaS_QwA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_1IzkcAACEeuGoqwuaS_QwA" name="Book">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_1IzkcQACEeuGoqwuaS_QwA" name="state">
@@ -274,9 +274,6 @@
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_2SgXcAACEeuGoqwuaS_QwA" name="price">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="__9a9kgACEeuGoqwuaS_QwA" name="student" type="_quR7wAABEeuGoqwuaS_QwA" association="__9ZvcAACEeuGoqwuaS_QwA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dD8n0AADEeuGoqwuaS_QwA"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_1IzkcwACEeuGoqwuaS_QwA" name="changeState"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_1IzkdAACEeuGoqwuaS_QwA" name="checkState">
@@ -289,5 +286,8 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__9aWgAACEeuGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__9aWgQACEeuGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__9a9kgACEeuGoqwuaS_QwA" name="student" type="_quR7wAABEeuGoqwuaS_QwA" association="__9ZvcAACEeuGoqwuaS_QwA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dD8n0AADEeuGoqwuaS_QwA"/>
+    </ownedEnd>
   </packagedElement>
 </uml:Model>
