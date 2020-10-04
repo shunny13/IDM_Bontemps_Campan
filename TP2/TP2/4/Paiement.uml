@@ -12,8 +12,6 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SlB_4AHaEeuanJSOFqocpw" name="Voluntary">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_fUhU0AHbEeuanJSOFqocpw" name="application" type="_WmVSIAHaEeuanJSOFqocpw" association="_fUgtwAHbEeuanJSOFqocpw"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_dWb3ggHbEeuanJSOFqocpw" name="student" type="_RqGosAHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_sAppMAHbEeuanJSOFqocpw" name="tellPrice"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_34Ct8AHbEeuanJSOFqocpw" name="askMeanOfPayment"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_T1P_sAHcEeuanJSOFqocpw" name="askDeposit"/>
@@ -33,9 +31,6 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ygaQAAHdEeuanJSOFqocpw" name="autorizeBookRecovery"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WmVSIAHaEeuanJSOFqocpw" name="Application">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_gZ7dsAHbEeuanJSOFqocpw" name="paymentList" type="_YUHpoAHaEeuanJSOFqocpw" association="_gZ5ogAHbEeuanJSOFqocpw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gZ8r0AHbEeuanJSOFqocpw" value="*"/>
-    </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_p9UfgAHbEeuanJSOFqocpw" name="showPrice"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_gptJoAHcEeuanJSOFqocpw" name="showHdfAmount"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_j1nsAAHcEeuanJSOFqocpw" name="showDepositAmount"/>
@@ -57,22 +52,27 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_rrJvwAHaEeuanJSOFqocpw" name="Hdf">
     <generalization xmi:type="uml:Generalization" xmi:id="_ftL1UAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_dWbQcAHbEeuanJSOFqocpw" memberEnd="_dWb3ggHbEeuanJSOFqocpw _dWb3hQHbEeuanJSOFqocpw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_dWbQcAHbEeuanJSOFqocpw" memberEnd="_dWb3ggHbEeuanJSOFqocpw _dWb3hQHbEeuanJSOFqocpw" navigableOwnedEnd="_dWb3ggHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dWb3gAHbEeuanJSOFqocpw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dWb3gQHbEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dWb3hQHbEeuanJSOFqocpw" name="voluntary" type="_SlB_4AHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dWb3ggHbEeuanJSOFqocpw" name="student" type="_RqGosAHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_fUgtwAHbEeuanJSOFqocpw" memberEnd="_fUhU0AHbEeuanJSOFqocpw _fUhU0wHbEeuanJSOFqocpw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_fUgtwAHbEeuanJSOFqocpw" memberEnd="_fUhU0AHbEeuanJSOFqocpw _fUhU0wHbEeuanJSOFqocpw" navigableOwnedEnd="_fUhU0AHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fUgtwQHbEeuanJSOFqocpw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fUgtwgHbEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fUhU0wHbEeuanJSOFqocpw" name="voluntary" type="_SlB_4AHaEeuanJSOFqocpw" association="_fUgtwAHbEeuanJSOFqocpw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fUhU0AHbEeuanJSOFqocpw" name="application" type="_WmVSIAHaEeuanJSOFqocpw" association="_fUgtwAHbEeuanJSOFqocpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_gZ5ogAHbEeuanJSOFqocpw" memberEnd="_gZ7dsAHbEeuanJSOFqocpw _gZ8r0QHbEeuanJSOFqocpw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_gZ5ogAHbEeuanJSOFqocpw" memberEnd="_gZ7dsAHbEeuanJSOFqocpw _gZ8r0QHbEeuanJSOFqocpw" navigableOwnedEnd="_gZ7dsAHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gZ62oAHbEeuanJSOFqocpw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gZ62oQHbEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_gZ8r0QHbEeuanJSOFqocpw" name="application" type="_WmVSIAHaEeuanJSOFqocpw" association="_gZ5ogAHbEeuanJSOFqocpw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gZ7dsAHbEeuanJSOFqocpw" name="paymentList" type="_YUHpoAHaEeuanJSOFqocpw" association="_gZ5ogAHbEeuanJSOFqocpw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gZ8r0AHbEeuanJSOFqocpw" value="*"/>
+    </ownedEnd>
   </packagedElement>
 </uml:Model>
