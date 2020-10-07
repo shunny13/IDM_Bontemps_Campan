@@ -37,10 +37,15 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Yi45oAKDEeufX-KuTxw1aA" name="chooseOtherTools">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yi45oQKDEeufX-KuTxw1aA" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yi45oQKDEeufX-KuTxw1aA" name="chosenTools" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yi45ogKDEeufX-KuTxw1aA" type="_O2XJ8AKDEeufX-KuTxw1aA"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yi45ogKDEeufX-KuTxw1aA" name="toolsList" type="_O2XJ8AKDEeufX-KuTxw1aA"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wEyOQAiEEeu54o071uiaXw" name="payContribution">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zpqqQAiEEeu54o071uiaXw" name="amount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_QcsSwAJ8EeufX-KuTxw1aA" name="Voluntary">
@@ -55,26 +60,31 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_YsDkEAKAEeufX-KuTxw1aA" name="chooseOptions"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_LMoVEAKBEeufX-KuTxw1aA" name="askForBooks"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_V-0FQAKBEeufX-KuTxw1aA" name="askForParentsChanges"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_uI8G8AKBEeufX-KuTxw1aA" name="updateParentsInformations">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yb5w8AKBEeufX-KuTxw1aA">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uI8G8AKBEeufX-KuTxw1aA" name="updateParentsInformations" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_yb5w8AKBEeufX-KuTxw1aA" name="parentInformations">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_AbNH8AKDEeufX-KuTxw1aA" name="askForDonation"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_AbO9IAKDEeufX-KuTxw1aA" name="askForSubscription"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_AbQLQAKDEeufX-KuTxw1aA" name="askForContribution"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_LYO2MAKDEeufX-KuTxw1aA" name="fillDonation">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LYO2MQKDEeufX-KuTxw1aA">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LYO2MAKDEeufX-KuTxw1aA" name="fillDonation" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LYO2MQKDEeufX-KuTxw1aA" name="amount">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_LYQrYAKDEeufX-KuTxw1aA" name="fillSubscription"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LYQrYAKDEeufX-KuTxw1aA" name="fillSubscription" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XgS0MAKDEeufX-KuTxw1aA" name="askForOtherTools">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N-sssAKEEeufX-KuTxw1aA" type="_O2XJ8AKDEeufX-KuTxw1aA"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_N-sssAKEEeufX-KuTxw1aA" name="toolsList" type="_O2XJ8AKDEeufX-KuTxw1aA"/>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_ReJPEAKEEeufX-KuTxw1aA" name="fillOptionableTools">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ReJPEQKEEeufX-KuTxw1aA">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ReJPEAKEEeufX-KuTxw1aA" name="fillOptionableTools" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ReJPEQKEEeufX-KuTxw1aA" name="chosenTools">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMap"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qEW84AiEEeu54o071uiaXw" name="fillContribution" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_u58LwAiEEeu54o071uiaXw" name="amount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
@@ -112,14 +122,14 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_u7vPIgJ8EeufX-KuTxw1aA" name="voluntary" type="_QcsSwAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_u7uBAQJ8EeufX-KuTxw1aA" name="student" type="_Pm7vcAJ8EeufX-KuTxw1aA" association="_u7sy4AJ8EeufX-KuTxw1aA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_RyfLkAJ9EeufX-KuTxw1aA" memberEnd="_RyfyoQJ9EeufX-KuTxw1aA _RyfypAJ9EeufX-KuTxw1aA" navigableOwnedEnd="_RyfyoQJ9EeufX-KuTxw1aA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_RyfLkAJ9EeufX-KuTxw1aA" memberEnd="_RyfyoQJ9EeufX-KuTxw1aA _RyfypAJ9EeufX-KuTxw1aA" navigableOwnedEnd="_RyfyoQJ9EeufX-KuTxw1aA _RyfypAJ9EeufX-KuTxw1aA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RyfLkQJ9EeufX-KuTxw1aA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RyfyoAJ9EeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_RyfypAJ9EeufX-KuTxw1aA" name="voluntary" type="_QcsSwAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_RyfyoQJ9EeufX-KuTxw1aA" name="application" type="_SqiqYAJ8EeufX-KuTxw1aA" association="_RyfLkAJ9EeufX-KuTxw1aA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_uRUcUAKAEeufX-KuTxw1aA" name="Book"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uRUcUAKAEeufX-KuTxw1aA" name="Book" isAbstract="true"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_v07kIAKAEeufX-KuTxw1aA" memberEnd="_v08LMgKAEeufX-KuTxw1aA _v08LNQKAEeufX-KuTxw1aA" navigableOwnedEnd="_v08LMgKAEeufX-KuTxw1aA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v08LMAKAEeufX-KuTxw1aA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_v08LMQKAEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>
@@ -130,7 +140,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v08LNAKAEeufX-KuTxw1aA" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_O2XJ8AKDEeufX-KuTxw1aA" name="OptionableTool"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O2XJ8AKDEeufX-KuTxw1aA" name="OptionableTool" isAbstract="true"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_SvnTcAKDEeufX-KuTxw1aA" memberEnd="_Svn6ggKDEeufX-KuTxw1aA _Svn6hQKDEeufX-KuTxw1aA" navigableOwnedEnd="_Svn6ggKDEeufX-KuTxw1aA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Svn6gAKDEeufX-KuTxw1aA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Svn6gQKDEeufX-KuTxw1aA" key="nature" value="UML_Nature"/>

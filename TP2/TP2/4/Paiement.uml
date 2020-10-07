@@ -5,24 +5,26 @@
   </packageImport>
   <packagedElement xmi:type="uml:Class" xmi:id="_RqGosAHaEeuanJSOFqocpw" name="Student">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_J_gCkAHcEeuanJSOFqocpw" name="choosePayment">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NPsA8AHcEeuanJSOFqocpw" type="_YUHpoAHaEeuanJSOFqocpw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NPsA8AHcEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_XBbn0AHcEeuanJSOFqocpw" name="choosePaymentForDeposit">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cMsLwAHcEeuanJSOFqocpw" type="_YUHpoAHaEeuanJSOFqocpw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cMsLwAHcEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw"/>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_SlB_4AHaEeuanJSOFqocpw" name="Voluntary">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_sAppMAHbEeuanJSOFqocpw" name="tellPrice"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_34Ct8AHbEeuanJSOFqocpw" name="askMeanOfPayment"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_34Ct8AHbEeuanJSOFqocpw" name="askMeanOfPayment">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2ZBo8AiDEeu54o071uiaXw" name="paymentList" type="_YUHpoAHaEeuanJSOFqocpw"/>
+    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_T1P_sAHcEeuanJSOFqocpw" name="askDeposit"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_2IEIoAHcEeuanJSOFqocpw" name="selectMeansOfPayment">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5AoRMAHcEeuanJSOFqocpw" type="_YUHpoAHaEeuanJSOFqocpw"/>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7BFtEAHcEeuanJSOFqocpw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5AoRMAHcEeuanJSOFqocpw" name="payment" type="_YUHpoAHaEeuanJSOFqocpw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7BFtEAHcEeuanJSOFqocpw" name="amount">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_K2PA0AHdEeuanJSOFqocpw" name="fillCheckNumber">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlSsgAHdEeuanJSOFqocpw" type="_aTncMAHaEeuanJSOFqocpw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_OlSsgAHdEeuanJSOFqocpw" name="check" type="_aTncMAHaEeuanJSOFqocpw"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_RPFZQAHdEeuanJSOFqocpw" name="printMemberSheet"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aRcxoAHdEeuanJSOFqocpw" name="makeSign"/>
@@ -52,14 +54,14 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_rrJvwAHaEeuanJSOFqocpw" name="Hdf">
     <generalization xmi:type="uml:Generalization" xmi:id="_ftL1UAMAEeu0Hetlq02o5A" general="_YUHpoAHaEeuanJSOFqocpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_dWbQcAHbEeuanJSOFqocpw" memberEnd="_dWb3ggHbEeuanJSOFqocpw _dWb3hQHbEeuanJSOFqocpw" navigableOwnedEnd="_dWb3ggHbEeuanJSOFqocpw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_dWbQcAHbEeuanJSOFqocpw" memberEnd="_dWb3ggHbEeuanJSOFqocpw _dWb3hQHbEeuanJSOFqocpw" navigableOwnedEnd="_dWb3ggHbEeuanJSOFqocpw _dWb3hQHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dWb3gAHbEeuanJSOFqocpw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dWb3gQHbEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dWb3hQHbEeuanJSOFqocpw" name="voluntary" type="_SlB_4AHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_dWb3ggHbEeuanJSOFqocpw" name="student" type="_RqGosAHaEeuanJSOFqocpw" association="_dWbQcAHbEeuanJSOFqocpw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_fUgtwAHbEeuanJSOFqocpw" memberEnd="_fUhU0AHbEeuanJSOFqocpw _fUhU0wHbEeuanJSOFqocpw" navigableOwnedEnd="_fUhU0AHbEeuanJSOFqocpw">
+  <packagedElement xmi:type="uml:Association" xmi:id="_fUgtwAHbEeuanJSOFqocpw" memberEnd="_fUhU0AHbEeuanJSOFqocpw _fUhU0wHbEeuanJSOFqocpw" navigableOwnedEnd="_fUhU0AHbEeuanJSOFqocpw _fUhU0wHbEeuanJSOFqocpw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fUgtwQHbEeuanJSOFqocpw" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fUgtwgHbEeuanJSOFqocpw" key="nature" value="UML_Nature"/>
     </eAnnotations>

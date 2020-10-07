@@ -107,7 +107,7 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Usgy8QZ-EeupkLBZyTEmXw" name="showDepositAmount"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_UsiBEAZ-EeupkLBZyTEmXw" name="showEachPayment"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q5FAAZ-EeupkLBZyTEmXw" name="createBookList">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q5FAQZ-EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q5FAQZ-EeupkLBZyTEmXw" name="bookList" direction="return">
         <type xmi:type="uml:Class" href="../4/PremiereInscription.uml#_N1xIUAHCEeuYKLnCSau0Lg"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Q5FAgZ-EeupkLBZyTEmXw"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Q5FAwZ-EeupkLBZyTEmXw" value="*"/>
@@ -115,43 +115,43 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q6TIAZ-EeupkLBZyTEmXw" name="askForAction"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q6TIQZ-EeupkLBZyTEmXw" name="addNewBook">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q6TIgZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q6TIgZ-EeupkLBZyTEmXw" name="book">
         <type xmi:type="uml:Class" href="../4/PremiereInscription.uml#_N1xIUAHCEeuYKLnCSau0Lg"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q6TIwZ-EeupkLBZyTEmXw" name="askSignInForm"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q66MAZ-EeupkLBZyTEmXw" name="askForName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q66MQZ-EeupkLBZyTEmXw" name="verifyParentName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66MgZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66MgZ-EeupkLBZyTEmXw" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66MwZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66MwZ-EeupkLBZyTEmXw" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-Q66NAZ-EeupkLBZyTEmXw" name="verifySignIn">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66NQZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66NQZ-EeupkLBZyTEmXw" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66NgZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-Q66NgZ-EeupkLBZyTEmXw" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aClqUAZ_EeupkLBZyTEmXw" name="showMembership"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aCp7wAZ_EeupkLBZyTEmXw" name="showMembershipList">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCp7wQZ_EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCp7wQZ_EeupkLBZyTEmXw" name="name">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aCtmIAZ_EeupkLBZyTEmXw" name="searchForBrotherSisterName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCtmIQZ_EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCtmIQZ_EeupkLBZyTEmXw" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCtmIgZ_EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_aCtmIgZ_EeupkLBZyTEmXw" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_aCx3kAZ_EeupkLBZyTEmXw" name="showNoPayment"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aCx3kAZ_EeupkLBZyTEmXw" name="showNoPayment" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aC2JAAZ_EeupkLBZyTEmXw" name="linkSheets"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_YyE29QZ6EeupkLBZyTEmXw" name="Voluntary">
@@ -212,7 +212,7 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fjJlUAZ-EeupkLBZyTEmXw" name="tellPrice"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fjJlUQZ-EeupkLBZyTEmXw" name="tidySheet"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fjJlUgZ-EeupkLBZyTEmXw" name="fillCheckNumber">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjJlUwZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjJlUwZ-EeupkLBZyTEmXw" name="check">
         <type xmi:type="uml:Class" href="../4/Paiement.uml#_aTncMAHaEeuanJSOFqocpw"/>
       </ownedParameter>
     </ownedOperation>
@@ -220,10 +220,10 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fjJlVQZ-EeupkLBZyTEmXw" name="printMemberSheet"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fjKMYAZ-EeupkLBZyTEmXw" name="giveSheet"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_fjKzcAZ-EeupkLBZyTEmXw" name="selectMeansOfPayment">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjKzcQZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjKzcQZ-EeupkLBZyTEmXw" name="payment">
         <type xmi:type="uml:Class" href="../4/Paiement.uml#_YUHpoAHaEeuanJSOFqocpw"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjKzcgZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_fjKzcgZ-EeupkLBZyTEmXw" name="amount">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
@@ -232,7 +232,7 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX8lgAZ-EeupkLBZyTEmXw" name="askForBrothersAndSisters"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkAZ-EeupkLBZyTEmXw" name="askForBooks"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkQZ-EeupkLBZyTEmXw" name="chooseAction"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkgZ-EeupkLBZyTEmXw" name="fillDonation">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkgZ-EeupkLBZyTEmXw" name="fillDonation" visibility="private">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX9MkwZ-EeupkLBZyTEmXw">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
@@ -241,43 +241,62 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9zoQZ-EeupkLBZyTEmXw" name="askForDonation"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9zogZ-EeupkLBZyTEmXw" name="askForFields"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9zowZ-EeupkLBZyTEmXw" name="askForName"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX-asAZ-EeupkLBZyTEmXw" name="fillName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX-asQZ-EeupkLBZyTEmXw">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX-asAZ-EeupkLBZyTEmXw" name="fillName" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX-asQZ-EeupkLBZyTEmXw" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX-asgZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX-asgZ-EeupkLBZyTEmXw" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_BwAZ-EeupkLBZyTEmXw" name="fillSubscription"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_BwQZ-EeupkLBZyTEmXw" name="askForContribution"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_BwAZ-EeupkLBZyTEmXw" name="fillSubscription" visibility="private"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_BwQZ-EeupkLBZyTEmXw" name="askForContribution">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_G1ilEAiMEeu54o071uiaXw" name="amount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_o0AZ-EeupkLBZyTEmXw" name="askForSubscription"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_o0QZ-EeupkLBZyTEmXw" name="fillOptionableTools">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX_o0gZ-EeupkLBZyTEmXw">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_o0QZ-EeupkLBZyTEmXw" name="fillOptionableTools" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX_o0gZ-EeupkLBZyTEmXw" name="chosenTools">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMap"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_o0wZ-EeupkLBZyTEmXw" name="askForParentName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_o1AZ-EeupkLBZyTEmXw" name="chooseOptions"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_zX_o1QZ-EeupkLBZyTEmXw" name="fillName" visibility="public"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zYAP4AZ-EeupkLBZyTEmXw" name="askForOtherTools">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zYAP4QZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zYAP4QZ-EeupkLBZyTEmXw" name="toolsList">
         <type xmi:type="uml:Class" href="../4/PremiereInscription.uml#_da7X8AHFEeuYKLnCSau0Lg"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_Wy73cAZ_EeupkLBZyTEmXw" name="chooseMembership"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_WzBXAAZ_EeupkLBZyTEmXw" name="askForBrotherSisterName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WzBXAAZ_EeupkLBZyTEmXw" name="askForBrotherSisterName" visibility="private"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_WzJ54AZ_EeupkLBZyTEmXw" name="confirmSheet"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_WzQAgAZ_EeupkLBZyTEmXw" name="searchForMembership"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_WzU5AAZ_EeupkLBZyTEmXw" name="verifyMembership"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_WzZKcAZ_EeupkLBZyTEmXw" name="fillBrotherSisterName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WzZxgAZ_EeupkLBZyTEmXw">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WzZKcAZ_EeupkLBZyTEmXw" name="fillBrotherSisterName" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WzZxgAZ_EeupkLBZyTEmXw" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WzZxgQZ_EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_WzZxgQZ_EeupkLBZyTEmXw" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_izOigAiNEeu54o071uiaXw" name="fillContribution" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lWja4AiNEeu54o071uiaXw" name="amount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Wa5ecAiOEeu54o071uiaXw" name="askForAddress"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Wa9I0AiOEeu54o071uiaXw" name="askForBirthDate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bjKYwAiOEeu54o071uiaXw" name="checkExistingStudent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gCBwwAiOEeu54o071uiaXw" name="reuseSameSheet"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gCKToAiOEeu54o071uiaXw" name="updateParentsInformations" visibility="private">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_gCKToQiOEeu54o071uiaXw" name="parentInformations">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gCUEoAiOEeu54o071uiaXw" name="verifyFilledSheet"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gCXH8AiOEeu54o071uiaXw" name="askForParentsChanges"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_fK1v0AZ6EeupkLBZyTEmXw" memberEnd="_fK298AZ6EeupkLBZyTEmXw _fK4zIAZ6EeupkLBZyTEmXw" navigableOwnedEnd="_fK298AZ6EeupkLBZyTEmXw _fK4zIAZ6EeupkLBZyTEmXw">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fK2W4AZ6EeupkLBZyTEmXw" source="org.eclipse.papyrus">
@@ -381,57 +400,62 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_lHBdkAZ-EeupkLBZyTEmXw" name="choosePaymentForDeposit">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lHBdkQZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lHBdkQZ-EeupkLBZyTEmXw" name="payment">
         <type xmi:type="uml:Class" href="../4/Paiement.uml#_YUHpoAHaEeuanJSOFqocpw"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_lHCEoAZ-EeupkLBZyTEmXw" name="choosePayment">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lHCEoQZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lHCEoQZ-EeupkLBZyTEmXw" name="payment">
         <type xmi:type="uml:Class" href="../4/Paiement.uml#_YUHpoAHaEeuanJSOFqocpw"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qEyYEAZ-EeupkLBZyTEmXw" name="chooseOtherTools">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEyYEQZ-EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEyYEQZ-EeupkLBZyTEmXw" name="chosenTools" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEyYEgZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEyYEgZ-EeupkLBZyTEmXw" name="toolsList">
         <type xmi:type="uml:Class" href="../4/PremiereInscription.uml#_da7X8AHFEeuYKLnCSau0Lg"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qEy_IAZ-EeupkLBZyTEmXw" name="subscribe">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEy_IQZ-EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEy_IQZ-EeupkLBZyTEmXw" name="answer" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qEy_IgZ-EeupkLBZyTEmXw" name="answerFields"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qEy_IwZ-EeupkLBZyTEmXw" name="donate">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEy_JAZ-EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEy_JAZ-EeupkLBZyTEmXw" name="amount" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qEzmMAZ-EeupkLBZyTEmXw" name="answerBrothersAndSisters">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEzmMQZ-EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEzmMQZ-EeupkLBZyTEmXw" name="answer" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qEzmMgZ-EeupkLBZyTEmXw" name="takeBookOrNot">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEzmMwZ-EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qEzmMwZ-EeupkLBZyTEmXw" name="answer" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_NvsVUAZ_EeupkLBZyTEmXw" name="answerParentsChanges">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NvsVUQZ_EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_NvsVUQZ_EeupkLBZyTEmXw" name="parentChanges" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VF-mYAZ_EeupkLBZyTEmXw" name="answerBrotherSisterFirstName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VF-mYQZ_EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VF-mYQZ_EeupkLBZyTEmXw" name="firstName" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_VGC30AZ_EeupkLBZyTEmXw" name="answerBrotherSisterLastName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VGC30QZ_EeupkLBZyTEmXw" direction="return">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VGC30QZ_EeupkLBZyTEmXw" name="lastName" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IvVYQAiMEeu54o071uiaXw" name="payContribution">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LnPZgAiMEeu54o071uiaXw" name="amount">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
@@ -468,16 +492,6 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_8zKDEwZ7EeupkLBZyTEmXw" name="student" type="_OmmE8AZ7EeupkLBZyTEmXw" association="_8zKDEAZ7EeupkLBZyTEmXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8zKqIAZ7EeupkLBZyTEmXw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8zKqIQZ7EeupkLBZyTEmXw" value="*"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_B4eXEAZ8EeupkLBZyTEmXw" memberEnd="_B4e-IgZ8EeupkLBZyTEmXw _B4e-JQZ8EeupkLBZyTEmXw" navigableOwnedEnd="_B4e-IgZ8EeupkLBZyTEmXw">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B4e-IAZ8EeupkLBZyTEmXw" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B4e-IQZ8EeupkLBZyTEmXw" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_B4e-JQZ8EeupkLBZyTEmXw" name="application" type="_YyE28AZ6EeupkLBZyTEmXw" association="_B4eXEAZ8EeupkLBZyTEmXw"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_B4e-IgZ8EeupkLBZyTEmXw" name="book" type="_3ADRcAZ6EeupkLBZyTEmXw" association="_B4eXEAZ8EeupkLBZyTEmXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B4e-IwZ8EeupkLBZyTEmXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B4e-JAZ8EeupkLBZyTEmXw" value="*"/>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_e6yPsAZ8EeupkLBZyTEmXw" memberEnd="_e6y2wgZ8EeupkLBZyTEmXw _e61TAAZ8EeupkLBZyTEmXw" navigableOwnedEnd="_e6y2wgZ8EeupkLBZyTEmXw">
