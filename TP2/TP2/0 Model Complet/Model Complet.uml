@@ -168,10 +168,10 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_YyE2-QZ6EeupkLBZyTEmXw" name="firstName" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LB7coAaBEeupkLBZyTEmXw" name="password" visibility="protected">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LB7coAaBEeupkLBZyTEmXw" name="password" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_LCBjQAaBEeupkLBZyTEmXw" name="login" visibility="protected">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LCBjQAaBEeupkLBZyTEmXw" name="login" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_YyE2-gZ6EeupkLBZyTEmXw" name="logIn"/>
@@ -289,7 +289,7 @@
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fK298AZ6EeupkLBZyTEmXw" name="application" type="_YyE28AZ6EeupkLBZyTEmXw" association="_fK1v0AZ6EeupkLBZyTEmXw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_2_nzoAZ6EeupkLBZyTEmXw" name="User">
+  <packagedElement xmi:type="uml:Class" xmi:id="_2_nzoAZ6EeupkLBZyTEmXw" name="User" isAbstract="true">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_2_nzoQZ6EeupkLBZyTEmXw" name="firstName" visibility="protected">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
     </ownedAttribute>
@@ -309,7 +309,7 @@
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_3ADRcAZ6EeupkLBZyTEmXw" name="Book">
+  <packagedElement xmi:type="uml:Class" xmi:id="_3ADRcAZ6EeupkLBZyTEmXw" name="Book" isAbstract="true">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_3ADRcQZ6EeupkLBZyTEmXw" name="state" type="_3AEfkAZ6EeupkLBZyTEmXw"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_GEfhAAZ7EeupkLBZyTEmXw" name="state">
       <type xmi:type="uml:Enumeration" href="../2/Retrait_des_livres.uml#_Zji0QP_kEeqGoqwuaS_QwA"/>

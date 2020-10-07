@@ -90,7 +90,7 @@
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_bJvMoP_9EeqGoqwuaS_QwA" name="Book">
+  <packagedElement xmi:type="uml:Class" xmi:id="_bJvMoP_9EeqGoqwuaS_QwA" name="Book" isAbstract="true">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_bJvMof_9EeqGoqwuaS_QwA" name="state">
       <type xmi:type="uml:Enumeration" href="../2/Retrait_des_livres.uml#_Zji0QP_kEeqGoqwuaS_QwA"/>
     </ownedAttribute>

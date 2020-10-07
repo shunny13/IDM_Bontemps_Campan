@@ -210,7 +210,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_JEcmgAMDEeuUTcmrAmusGQ" name="application" type="_m3iwMAAAEeuGoqwuaS_QwA" association="_JEWf4AMDEeuUTcmrAmusGQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_JEb_cAMDEeuUTcmrAmusGQ" name="student" type="_m3hiEAAAEeuGoqwuaS_QwA" association="_JEWf4AMDEeuUTcmrAmusGQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_AKw0sAZTEeuZHP3gmOLB8Q" name="Book">
+  <packagedElement xmi:type="uml:Class" xmi:id="_AKw0sAZTEeuZHP3gmOLB8Q" name="Book" isAbstract="true">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_AKxbwAZTEeuZHP3gmOLB8Q" name="state">
       <type xmi:type="uml:Enumeration" href="../2/Retrait_des_livres.uml#_Zji0QP_kEeqGoqwuaS_QwA"/>
     </ownedAttribute>
