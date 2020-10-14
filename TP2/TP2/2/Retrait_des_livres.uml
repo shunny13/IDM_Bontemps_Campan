@@ -122,4 +122,10 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_fCxBxP__EeqGoqwuaS_QwA" name="volountary" type="_0qWSYP2HEeq_2rwN6s0CgA" association="_fCwasP__EeqGoqwuaS_QwA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_fCxBwf__EeqGoqwuaS_QwA" name="summary" type="_Xwo2wP_lEeqGoqwuaS_QwA" association="_fCwasP__EeqGoqwuaS_QwA"/>
   </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_chRH4A4BEeuEK9U5XDFOww">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_chRH4Q4BEeuEK9U5XDFOww" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+  </profileApplication>
 </uml:Model>
