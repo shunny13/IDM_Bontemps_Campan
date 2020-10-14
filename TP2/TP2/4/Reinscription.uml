@@ -92,10 +92,10 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_eJxGwAJ8EeufX-KuTxw1aA" name="askForName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_gDXssAJ8EeufX-KuTxw1aA" name="askForAction"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_QSD6oAJ9EeufX-KuTxw1aA" name="verifySignIn">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QSD6oQJ9EeufX-KuTxw1aA">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QSD6oQJ9EeufX-KuTxw1aA" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QSD6ogJ9EeufX-KuTxw1aA">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QSD6ogJ9EeufX-KuTxw1aA" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
@@ -110,7 +110,7 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_rzvmoAKAEeufX-KuTxw1aA" name="addNewBook">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rzvmoQKAEeufX-KuTxw1aA">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_rzvmoQKAEeufX-KuTxw1aA" name="book">
         <type xmi:type="uml:Class" href="PremiereInscription.uml#_N1xIUAHCEeuYKLnCSau0Lg"/>
       </ownedParameter>
     </ownedOperation>

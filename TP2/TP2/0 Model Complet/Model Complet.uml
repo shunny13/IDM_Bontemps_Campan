@@ -191,9 +191,7 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_086qIAZ8EeupkLBZyTEmXw" name="takeBookInventory"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_089tcAZ8EeupkLBZyTEmXw" name="returnTheDeposit">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_089tcQZ8EeupkLBZyTEmXw" name="Student">
-        <type xmi:type="uml:Class" href="../3/Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
-      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_089tcQZ8EeupkLBZyTEmXw" name="Student" type="_OmmE8AZ7EeupkLBZyTEmXw"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_09IFgAZ8EeupkLBZyTEmXw" name="makeStudentPay">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_09IFgQZ8EeupkLBZyTEmXw" name="Student">
@@ -204,7 +202,7 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_JyM28AZ9EeupkLBZyTEmXw" name="searchStudent">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JyM28QZ9EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_JyM28QZ9EeupkLBZyTEmXw" name="student">
         <type xmi:type="uml:Class" href="../2/Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
       </ownedParameter>
     </ownedOperation>
@@ -233,7 +231,7 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkAZ-EeupkLBZyTEmXw" name="askForBooks"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkQZ-EeupkLBZyTEmXw" name="chooseAction"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_zX9MkgZ-EeupkLBZyTEmXw" name="fillDonation" visibility="private">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX9MkwZ-EeupkLBZyTEmXw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zX9MkwZ-EeupkLBZyTEmXw" name="amount">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedParameter>
     </ownedOperation>

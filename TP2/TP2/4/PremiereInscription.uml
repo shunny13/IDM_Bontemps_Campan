@@ -98,10 +98,10 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_IoA78AHAEeuYKLnCSau0Lg" name="askForName"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_L9fC8AHAEeuYKLnCSau0Lg" name="askForAction" visibility="public"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ePIOUAHAEeuYKLnCSau0Lg" name="verifySignIn">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_XLTe4AHDEeuYKLnCSau0Lg">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_XLTe4AHDEeuYKLnCSau0Lg" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YOnWAAHDEeuYKLnCSau0Lg">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_YOnWAAHDEeuYKLnCSau0Lg" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
@@ -113,13 +113,13 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_uEst8AHCEeuYKLnCSau0Lg" name="addNewBook">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xqODIAHCEeuYKLnCSau0Lg" type="_N1xIUAHCEeuYKLnCSau0Lg"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xqODIAHCEeuYKLnCSau0Lg" name="book" type="_N1xIUAHCEeuYKLnCSau0Lg"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_SjF9oAHDEeuYKLnCSau0Lg" name="verifyParentName">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Z0ZoEAHDEeuYKLnCSau0Lg">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Z0ZoEAHDEeuYKLnCSau0Lg" name="firstName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_bRdb8AHDEeuYKLnCSau0Lg">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_bRdb8AHDEeuYKLnCSau0Lg" name="lastName">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedParameter>
     </ownedOperation>
