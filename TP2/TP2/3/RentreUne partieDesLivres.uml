@@ -23,7 +23,7 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_u3bp0P_-EeqGoqwuaS_QwA" name="signDiscloser"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_u3dfAP_-EeqGoqwuaS_QwA" name="giveBooks">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_u3dfAf_-EeqGoqwuaS_QwA" name="BookList">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_u3dfAf_-EeqGoqwuaS_QwA" name="bookList">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_bJvMoP_9EeqGoqwuaS_QwA"/>
       </ownedParameter>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_u3dfAv_-EeqGoqwuaS_QwA" name="theReceiverofBooks">
@@ -58,7 +58,7 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ydPS6v_-EeqGoqwuaS_QwA" name="takeBookInventory"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_FuHGoP__EeqGoqwuaS_QwA" name="searchStudent">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FuHGof__EeqGoqwuaS_QwA">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FuHGof__EeqGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="../2/Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
       </ownedParameter>
     </ownedOperation>
@@ -149,10 +149,10 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_qCoBkP__EeqGoqwuaS_QwA" name="booksReturnedByStudent">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_uvUaMP__EeqGoqwuaS_QwA" name="Books">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_uvUaMP__EeqGoqwuaS_QwA" name="books">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_bJvMoP_9EeqGoqwuaS_QwA"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_984wkP__EeqGoqwuaS_QwA" name="Student">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_984wkP__EeqGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
       </ownedParameter>
     </ownedOperation>

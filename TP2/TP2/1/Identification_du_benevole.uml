@@ -23,7 +23,7 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_cgyOMP2DEeq_2rwN6s0CgA" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IO4LUP_gEeqGoqwuaS_QwA" name="Volountary" type="_VhnO4P1-Eeq_2rwN6s0CgA"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IO4LUP_gEeqGoqwuaS_QwA" name="volountary" type="_VhnO4P1-Eeq_2rwN6s0CgA"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_psLBgP_gEeqGoqwuaS_QwA" name="chooseActivity"/>
   </packagedElement>

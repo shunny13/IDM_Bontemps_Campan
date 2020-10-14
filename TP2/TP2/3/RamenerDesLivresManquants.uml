@@ -31,7 +31,7 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_w0tj8AAAEeuGoqwuaS_QwA" name="giveMissingBooks">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_w0tj8QAAEeuGoqwuaS_QwA" name="BookList">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_w0tj8QAAEeuGoqwuaS_QwA" name="bookList">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_bJvMoP_9EeqGoqwuaS_QwA"/>
       </ownedParameter>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_w0tj8gAAEeuGoqwuaS_QwA" name="theReceiverofBooks">
@@ -134,10 +134,10 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_r4F48QAAEeuGoqwuaS_QwA" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_r4F48gAAEeuGoqwuaS_QwA" name="Student">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_r4F48gAAEeuGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_r4F48wAAEeuGoqwuaS_QwA" name="BooksStudentReturns">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_r4F48wAAEeuGoqwuaS_QwA" name="booksStudentReturns">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_bJvMoP_9EeqGoqwuaS_QwA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r4F49AAAEeuGoqwuaS_QwA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r4F49QAAEeuGoqwuaS_QwA" value="*"/>
@@ -176,13 +176,11 @@
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_4UK_IAAAEeuGoqwuaS_QwA" name="returnTheDeposit">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4UK_IQAAEeuGoqwuaS_QwA" name="Student">
-        <type xmi:type="uml:Class" href="Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
-      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4UK_IQAAEeuGoqwuaS_QwA" name="student" type="_m3hiEAAAEeuGoqwuaS_QwA"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_6yuFMAAAEeuGoqwuaS_QwA" name="takeBookInventory"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-IOocAAAEeuGoqwuaS_QwA" name="searchStudent">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-IOocQAAEeuGoqwuaS_QwA">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-IOocQAAEeuGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="../2/Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
       </ownedParameter>
     </ownedOperation>

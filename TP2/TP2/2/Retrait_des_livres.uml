@@ -14,7 +14,7 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_0qWSYP2HEeq_2rwN6s0CgA" name="Voluntary">
     <generalization xmi:type="uml:Generalization" xmi:id="_qgVzAAZ7EeupkLBZyTEmXw" general="_Km7LUP_hEeqGoqwuaS_QwA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_-WPI4P2HEeq_2rwN6s0CgA" name="searchStudent">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AVmYkP2IEeq_2rwN6s0CgA" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AVmYkP2IEeq_2rwN6s0CgA" name="student" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OGlMQP_lEeqGoqwuaS_QwA" name="sendSummary">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_WrvrQP_lEeqGoqwuaS_QwA" name="student" type="_0Y1EkP2HEeq_2rwN6s0CgA"/>

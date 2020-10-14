@@ -110,10 +110,10 @@
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xfn5EQACEeuGoqwuaS_QwA" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xfn5EgACEeuGoqwuaS_QwA" name="Student">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xfn5EgACEeuGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xfn5EwACEeuGoqwuaS_QwA" name="BooksStudentReturns">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xfn5EwACEeuGoqwuaS_QwA" name="booksStudentReturns">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_bJvMoP_9EeqGoqwuaS_QwA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xfn5FAACEeuGoqwuaS_QwA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xfn5FQACEeuGoqwuaS_QwA" value="*"/>
@@ -125,17 +125,17 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fTzAAAACEeuGoqwuaS_QwA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fT_0UAACEeuGoqwuaS_QwA" value="*"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZPUVEgACEeuGoqwuaS_QwA" name="Student">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZPUVEgACEeuGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZPUVEwACEeuGoqwuaS_QwA" name="BooksStudentReturns">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZPUVEwACEeuGoqwuaS_QwA" name="booksStudentReturns">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_bJvMoP_9EeqGoqwuaS_QwA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZPUVFAACEeuGoqwuaS_QwA"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZPUVFQACEeuGoqwuaS_QwA" value="*"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_KkitQAADEeuGoqwuaS_QwA" name="canReturnBail">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ocq1YAADEeuGoqwuaS_QwA" name="Student">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ocq1YAADEeuGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
       </ownedParameter>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_QE9o4AADEeuGoqwuaS_QwA" direction="return">
@@ -235,17 +235,15 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_TvpAUAACEeuGoqwuaS_QwA" name="takeBookInventory"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_TQGvMAADEeuGoqwuaS_QwA" name="makeStudentPay">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_V-K38AADEeuGoqwuaS_QwA" name="Student">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_V-K38AADEeuGoqwuaS_QwA" name="student">
         <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
       </ownedParameter>
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lDmmAAADEeuGoqwuaS_QwA" name="Price">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_lDmmAAADEeuGoqwuaS_QwA" name="price">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
       </ownedParameter>
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_v0yQoAADEeuGoqwuaS_QwA" name="returnTheDeposit">
-      <ownedParameter xmi:type="uml:Parameter" xmi:id="_v0yQoQADEeuGoqwuaS_QwA" name="Student">
-        <type xmi:type="uml:Class" href="Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
-      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_v0yQoQADEeuGoqwuaS_QwA" name="student" type="_quR7wAABEeuGoqwuaS_QwA"/>
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_Mp-lMAACEeuGoqwuaS_QwA" memberEnd="_Mp_MQgACEeuGoqwuaS_QwA _Mp_MRQACEeuGoqwuaS_QwA" navigableOwnedEnd="_Mp_MRQACEeuGoqwuaS_QwA _Mp_MQgACEeuGoqwuaS_QwA">
