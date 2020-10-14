@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_B-OVQAMEEeuUTcmrAmusGQ" name="Pre-inscription">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_B-OVQAMEEeuUTcmrAmusGQ" name="Pre-inscription">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_B_JiUAMEEeuUTcmrAmusGQ">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_B0VkAAMFEeuUTcmrAmusGQ" name="Student">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_E3hoMAMFEeuUTcmrAmusGQ" name="pre-fillInscription"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_NopfkAMFEeuUTcmrAmusGQ" name="Volontary">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WWWPgQMFEeuUTcmrAmusGQ" name="student" type="_B0VkAAMFEeuUTcmrAmusGQ" association="_WWVBYAMFEeuUTcmrAmusGQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WWW2kAMFEeuUTcmrAmusGQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WWW2kQMFEeuUTcmrAmusGQ" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_XHq-wwMFEeuUTcmrAmusGQ" name="application" type="_RpLVwAMFEeuUTcmrAmusGQ" association="_XHq-wAMFEeuUTcmrAmusGQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XHq-xAMFEeuUTcmrAmusGQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XHq-xQMFEeuUTcmrAmusGQ" value="1"/>
-    </ownedAttribute>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_PTl-cAMFEeuUTcmrAmusGQ" name="getInfos"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_QmzSwAMFEeuUTcmrAmusGQ" name="stockInfos"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_RpLVwAMFEeuUTcmrAmusGQ" name="Application">
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_SesBcAMFEeuUTcmrAmusGQ" name="receiveInfos()"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_Uxl4MAMFEeuUTcmrAmusGQ" name="stockInfos()"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WWVBYAMFEeuUTcmrAmusGQ" memberEnd="_WWWPgQMFEeuUTcmrAmusGQ _WWW2kgMFEeuUTcmrAmusGQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WWVocAMFEeuUTcmrAmusGQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WWWPgAMFEeuUTcmrAmusGQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_WWW2kgMFEeuUTcmrAmusGQ" name="volontary" type="_NopfkAMFEeuUTcmrAmusGQ" association="_WWVBYAMFEeuUTcmrAmusGQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_XHq-wAMFEeuUTcmrAmusGQ" memberEnd="_XHq-wwMFEeuUTcmrAmusGQ _XHq-xgMFEeuUTcmrAmusGQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XHq-wQMFEeuUTcmrAmusGQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XHq-wgMFEeuUTcmrAmusGQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XHq-xgMFEeuUTcmrAmusGQ" name="volontary" type="_NopfkAMFEeuUTcmrAmusGQ" association="_XHq-wAMFEeuUTcmrAmusGQ"/>
-  </packagedElement>
 </uml:Model>
