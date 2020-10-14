@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_B-uEgAMEEeuUTcmrAmusGQ" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_B0cRsAMFEeuUTcmrAmusGQ" type="Class_Shape">
     <children xmi:type="notation:DecorationNode" xmi:id="_B0cRsgMFEeuUTcmrAmusGQ" type="Class_NameLabel"/>
@@ -98,12 +99,16 @@
     <element xmi:type="uml:Class" href="Pre-inscription.uml#_RpLVwAMFEeuUTcmrAmusGQ"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RpNK8QMFEeuUTcmrAmusGQ" x="780" y="220"/>
   </children>
+=======
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_B-uEgAMEEeuUTcmrAmusGQ" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+>>>>>>> 66f35e226f7c72f284a5ba6bd4bdc83d5ff10497
   <styles xmi:type="notation:StringValueStyle" xmi:id="_B-uEgQMEEeuUTcmrAmusGQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_B-uEggMEEeuUTcmrAmusGQ"/>
   <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_B-uEgwMEEeuUTcmrAmusGQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
     <owner xmi:type="uml:Model" href="Pre-inscription.uml#_B-OVQAMEEeuUTcmrAmusGQ"/>
   </styles>
   <element xmi:type="uml:Model" href="Pre-inscription.uml#_B-OVQAMEEeuUTcmrAmusGQ"/>
+<<<<<<< HEAD
   <edges xmi:type="notation:Connector" xmi:id="_WWc9MAMFEeuUTcmrAmusGQ" type="Association_Edge" source="_NoqtsAMFEeuUTcmrAmusGQ" target="_B0cRsAMFEeuUTcmrAmusGQ" routing="Rectilinear">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e0I7MAMFEeuUTcmrAmusGQ" source="PapyrusCSSForceValue">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e0JiQAMFEeuUTcmrAmusGQ" key="routing" value="true"/>
@@ -169,4 +174,6 @@
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XH7dcAMFEeuUTcmrAmusGQ" id="(1.0,0.5357142857142857)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_XH7dcQMFEeuUTcmrAmusGQ" id="(0.0,0.7142857142857143)"/>
   </edges>
+=======
+>>>>>>> 66f35e226f7c72f284a5ba6bd4bdc83d5ff10497
 </notation:Diagram>

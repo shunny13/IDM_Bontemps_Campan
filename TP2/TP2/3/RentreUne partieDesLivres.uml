@@ -31,15 +31,13 @@
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_ydPS4P_-EeqGoqwuaS_QwA" name="Volountary">
+  <packagedElement xmi:type="uml:Class" xmi:id="_ydPS4P_-EeqGoqwuaS_QwA" name="Voluntary">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ydPS4f_-EeqGoqwuaS_QwA" name="application">
       <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_3Zn2sP_lEeqGoqwuaS_QwA"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_ydPS4v_-EeqGoqwuaS_QwA" name="student">
       <type xmi:type="uml:Class" href="RendreTousLesLivres.uml#_1-IJEP_lEeqGoqwuaS_QwA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_HqessP__EeqGoqwuaS_QwA" name="student" type="_tit5oP_-EeqGoqwuaS_QwA" association="_HqdekP__EeqGoqwuaS_QwA"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_xMSy8v__EeqGoqwuaS_QwA" name="application" type="_omKqoP__EeqGoqwuaS_QwA" association="_xMRk0P__EeqGoqwuaS_QwA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ydPS4__-EeqGoqwuaS_QwA" name="searchStudent">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_ydPS5P_-EeqGoqwuaS_QwA">
         <type xmi:type="uml:Class" href="Retrait_des_livres.uml#_0Y1EkP2HEeq_2rwN6s0CgA"/>
@@ -66,10 +64,11 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_IIz8kAABEeuGoqwuaS_QwA" name="takeBookInventory"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_HqdekP__EeqGoqwuaS_QwA" memberEnd="_HqeFov__EeqGoqwuaS_QwA _HqessP__EeqGoqwuaS_QwA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_HqdekP__EeqGoqwuaS_QwA" memberEnd="_HqeFov__EeqGoqwuaS_QwA _HqessP__EeqGoqwuaS_QwA" navigableOwnedEnd="_HqeFov__EeqGoqwuaS_QwA _HqessP__EeqGoqwuaS_QwA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HqeFoP__EeqGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HqeFof__EeqGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_HqessP__EeqGoqwuaS_QwA" name="student" type="_tit5oP_-EeqGoqwuaS_QwA" association="_HqdekP__EeqGoqwuaS_QwA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_HqeFov__EeqGoqwuaS_QwA" name="volountary" type="_ydPS4P_-EeqGoqwuaS_QwA" association="_HqdekP__EeqGoqwuaS_QwA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_omKqoP__EeqGoqwuaS_QwA" name="Application">
@@ -102,10 +101,6 @@
       <type xmi:type="uml:Class" href="Retrait_des_livres.uml#_dXgBgP2IEeq_2rwN6s0CgA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_omKqsf__EeqGoqwuaS_QwA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_omKqsv__EeqGoqwuaS_QwA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_xMTaAv__EeqGoqwuaS_QwA" name="volountary" type="_ydPS4P_-EeqGoqwuaS_QwA" association="_xMRk0P__EeqGoqwuaS_QwA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bb-r0AAAEeuGoqwuaS_QwA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bcH1wAAAEeuGoqwuaS_QwA" value="*"/>
     </ownedAttribute>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_omKqs___EeqGoqwuaS_QwA" name="showStudentInfos">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_omKqtP__EeqGoqwuaS_QwA" name="firstName">
@@ -167,12 +162,17 @@
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_xMRk0P__EeqGoqwuaS_QwA" memberEnd="_xMSy8v__EeqGoqwuaS_QwA _xMTaAv__EeqGoqwuaS_QwA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_xMRk0P__EeqGoqwuaS_QwA" memberEnd="_xMSy8v__EeqGoqwuaS_QwA _xMTaAv__EeqGoqwuaS_QwA" navigableOwnedEnd="_xMTaAv__EeqGoqwuaS_QwA _xMSy8v__EeqGoqwuaS_QwA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xMSy8P__EeqGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xMSy8f__EeqGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xMSy8v__EeqGoqwuaS_QwA" name="application" type="_omKqoP__EeqGoqwuaS_QwA" association="_xMRk0P__EeqGoqwuaS_QwA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xMTaAv__EeqGoqwuaS_QwA" name="volountary" type="_ydPS4P_-EeqGoqwuaS_QwA" association="_xMRk0P__EeqGoqwuaS_QwA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bb-r0AAAEeuGoqwuaS_QwA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bcH1wAAAEeuGoqwuaS_QwA" value="*"/>
+    </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="__8l-gP__EeqGoqwuaS_QwA" memberEnd="__8mlkv__EeqGoqwuaS_QwA __8nMov__EeqGoqwuaS_QwA">
+  <packagedElement xmi:type="uml:Association" xmi:id="__8l-gP__EeqGoqwuaS_QwA" memberEnd="__8mlkv__EeqGoqwuaS_QwA __8nMov__EeqGoqwuaS_QwA" navigableOwnedEnd="__8mlkv__EeqGoqwuaS_QwA __8nMov__EeqGoqwuaS_QwA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__8mlkP__EeqGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__8mlkf__EeqGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>

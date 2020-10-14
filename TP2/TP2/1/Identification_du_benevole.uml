@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hMhJEP15Eeqy84cM4Uhx6w" name="TP2">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hMhJEP15Eeqy84cM4Uhx6w" name="Identification_du_benevole">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_hN2l0P15Eeqy84cM4Uhx6w">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_VhnO4P1-Eeq_2rwN6s0CgA" name="Volountary">
+  <packagedElement xmi:type="uml:Class" xmi:id="_VhnO4P1-Eeq_2rwN6s0CgA" name="Voluntary">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_zDLPUP1-Eeq_2rwN6s0CgA" name="login" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -27,7 +27,7 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_psLBgP_gEeqGoqwuaS_QwA" name="chooseActivity"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_VSLRcP__EeqGoqwuaS_QwA" memberEnd="_VSL4gv__EeqGoqwuaS_QwA _VSMfkv__EeqGoqwuaS_QwA">
+  <packagedElement xmi:type="uml:Association" xmi:id="_VSLRcP__EeqGoqwuaS_QwA" visibility="protected" memberEnd="_VSL4gv__EeqGoqwuaS_QwA _VSMfkv__EeqGoqwuaS_QwA" navigableOwnedEnd="_VSMfkv__EeqGoqwuaS_QwA _VSL4gv__EeqGoqwuaS_QwA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VSL4gP__EeqGoqwuaS_QwA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VSL4gf__EeqGoqwuaS_QwA" key="nature" value="UML_Nature"/>
     </eAnnotations>
