@@ -14,11 +14,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference website.ecore#//Website/pages"/>
     </genClasses>
     <genClasses ecoreClass="website.ecore#//Page">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Page/paragraphs"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Page/images"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Page/sections"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Page/links"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Page/buttons"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference website.ecore#//Page/content"/>
     </genClasses>
     <genClasses ecoreClass="website.ecore#//Paragraph">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute website.ecore#//Paragraph/content"/>
@@ -42,5 +38,6 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Button/targetParagraph"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference website.ecore#//Button/targetExternalWebsite"/>
     </genClasses>
+    <genClasses ecoreClass="website.ecore#//Content"/>
   </genPackages>
 </genmodel:GenModel>

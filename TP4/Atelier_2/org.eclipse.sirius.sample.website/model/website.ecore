@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="website" nsURI="http://www.example.org/website" nsPrefix="website">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="website" nsURI="http://www.eclipse.org/sirius/sample/website"
+    nsPrefix="website">
   <eClassifiers xsi:type="ecore:EClass" name="Website">
     <eStructuralFeatures xsi:type="ecore:EReference" name="pages" upperBound="-1"
         eType="#//Page" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Page">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="paragraphs" upperBound="-1"
-        eType="#//Paragraph"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="images" upperBound="-1"
-        eType="#//Image"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sections" upperBound="-1"
-        eType="#//Section"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="links" upperBound="-1"
-        eType="#//Link"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="buttons" upperBound="-1"
-        eType="#//Button"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" upperBound="-1"
+        eType="#//Content" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Paragraph">
+  <eClassifiers xsi:type="ecore:EClass" name="Paragraph" eSuperTypes="#//Content">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Image"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Section">
+  <eClassifiers xsi:type="ecore:EClass" name="Image" eSuperTypes="#//Content"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Section" eSuperTypes="#//Content">
     <eStructuralFeatures xsi:type="ecore:EReference" name="subParagraphs" upperBound="-1"
         eType="#//Paragraph"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="subImages" upperBound="-1"
@@ -35,16 +28,17 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="parentSections" upperBound="-1"
         eType="#//Section" eOpposite="#//Section/childSections"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Link">
+  <eClassifiers xsi:type="ecore:EClass" name="Link" eSuperTypes="#//Content">
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetPage" eType="#//Page"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetParagraph" eType="#//Paragraph"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetExternalWebsite"
         eType="#//Website"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Button">
+  <eClassifiers xsi:type="ecore:EClass" name="Button" eSuperTypes="#//Content">
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetPage" eType="#//Page"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetParagraph" eType="#//Paragraph"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetExternalWebsite"
         eType="#//Website"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Content" abstract="true"/>
 </ecore:EPackage>
