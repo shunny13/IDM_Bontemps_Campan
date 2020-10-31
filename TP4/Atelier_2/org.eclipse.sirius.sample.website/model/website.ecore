@@ -3,42 +3,94 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="website" nsURI="http://www.eclipse.org/sirius/sample/website"
     nsPrefix="website">
   <eClassifiers xsi:type="ecore:EClass" name="Website">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="pages" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pages" lowerBound="1" upperBound="-1"
         eType="#//Page" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Page">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="content" upperBound="-1"
-        eType="#//Content" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Html" eSuperTypes="#//Page">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="head" lowerBound="1" eType="#//Head"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="body" lowerBound="1" eType="#//Body"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lang" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="footer" lowerBound="1"
+        eType="#//Footer" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Paragraph" eSuperTypes="#//Content">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Image" eSuperTypes="#//Content"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Image" eSuperTypes="#//Content">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="altText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Section" eSuperTypes="#//Content">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subParagraphs" upperBound="-1"
-        eType="#//Paragraph"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subImages" upperBound="-1"
-        eType="#//Image"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subLinks" upperBound="-1"
-        eType="#//Link"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="subButtons" upperBound="-1"
-        eType="#//Button"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="childSections" upperBound="-1"
         eType="#//Section" eOpposite="#//Section/parentSections"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parentSections" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parentSections" lowerBound="1"
         eType="#//Section" eOpposite="#//Section/childSections"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentInSection" upperBound="-1"
+        eType="#//Content" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link" eSuperTypes="#//Content">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPage" eType="#//Page"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPage" eType="#//Html"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetParagraph" eType="#//Paragraph"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetExternalWebsite"
         eType="#//Website"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="href" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Button" eSuperTypes="#//Content">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPage" eType="#//Page"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="targetPage" eType="#//Html"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetParagraph" eType="#//Paragraph"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetExternalWebsite"
         eType="#//Website"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Content" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Content" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Class" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lists" abstract="true" eSuperTypes="#//Content">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parentList" lowerBound="1"
+        eType="#//Lists" eOpposite="#//Lists/childsLists"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childsLists" upperBound="-1"
+        eType="#//Lists" eOpposite="#//Lists/parentList"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OLists" eSuperTypes="#//Lists">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listitem" upperBound="-1"
+        eType="#//ListItem" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ULists" eSuperTypes="#//Lists">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listitem" upperBound="-1"
+        eType="#//ListItem" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ListItem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" upperBound="-1"
+        eType="#//Content" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scripts" eSuperTypes="#//Content"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Div" eSuperTypes="#//Content">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="content" upperBound="-1"
+        eType="#//Content" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Head">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="title" lowerBound="1" eType="#//Title"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="meta" lowerBound="1" upperBound="-1"
+        eType="#//Meta" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scripts" upperBound="-1"
+        eType="#//Scripts" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Body">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentInBody" upperBound="-1"
+        eType="#//Content" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Title">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Meta"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Footer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contentInFooter" upperBound="-1"
+        eType="#//Content" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Page" abstract="true"/>
 </ecore:EPackage>
