@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ville:Ville xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ville="http://www.example.org/ville" name="Lille">
+  <habitant name="John Koenig" construction="//@rue.0/@construction.1 //@rue.1/@construction.1"/>
+  <habitant name="Helena Russell" construction="//@rue.1/@construction.0 //@rue.0/@construction.0"/>
+  <habitant name="Tanya Alexander" construction="//@rue.0/@construction.0"/>
+  <rue name="Rue de la paix">
+    <construction xsi:type="ville:Maison" name="maison1" habitant="//@habitant.1 //@habitant.2"/>
+    <construction xsi:type="ville:Immeuble" name="immeuble 1" habitant="//@habitant.0"/>
+  </rue>
+  <rue name="Rue de Paris">
+    <construction xsi:type="ville:Immeuble" name="immeuble 1" habitant="//@habitant.1"/>
+    <construction xsi:type="ville:Immeuble" name="immeuble 2" habitant="//@habitant.0"/>
+  </rue>
+</ville:Ville>

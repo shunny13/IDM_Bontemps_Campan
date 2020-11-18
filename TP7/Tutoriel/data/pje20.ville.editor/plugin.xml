@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ville -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="pje20.ville.ville.presentation.VilleModelWizardID"
+            name="%_UI_VilleModelWizard_label"
+            class="pje20.ville.ville.presentation.VilleModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/VilleModelFile.gif">
+         <description>%_UI_VilleModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ville -->
+      <editor
+            id="pje20.ville.ville.presentation.VilleEditorID"
+            name="%_UI_VilleEditor_label"
+            icon="icons/full/obj16/VilleModelFile.gif"
+            extensions="ville"
+            class="pje20.ville.ville.presentation.VilleEditor"
+            contributorClass="pje20.ville.ville.presentation.VilleActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

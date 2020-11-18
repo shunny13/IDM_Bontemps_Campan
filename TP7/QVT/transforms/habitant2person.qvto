@@ -1,0 +1,21 @@
+modeltype villeMM "strict" uses "http://www.example.org/ville";
+modeltype libraryMM "strict" uses "http://www.example.org/annuaire";
+
+transformation habitant2person(in ville : villeMM, out lib : libraryMM);
+
+main() {
+	ville.rootObjects().allSubobjectsOfType(Habitant)[Habitant] -> map habitant2Person();
+}
+
+mapping villeMM::Habitant::habitant2Person() : libraryMM::Person {
+	
+	name:=self.name;
+	addresses += self.construction -> map construction2Adress();
+}
+
+
+mapping villeMM::Construction::construction2Adress() : libraryMM::Address{
+	town := self.name;
+	street:= self.container().oclAsType(Rue).name;
+	type:='unknown';
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ville" nsURI="http://www.example.org/ville" nsPrefix="ville">
+  <eClassifiers xsi:type="ecore:EClass" name="Ville">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="habitant" upperBound="-1"
+        eType="#//Habitant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rue" upperBound="-1" eType="#//Rue"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Habitant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="construction" upperBound="-1"
+        eType="#//Construction" eOpposite="#//Construction/habitant"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="construction" upperBound="-1"
+        eType="#//Construction" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Construction" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="habitant" upperBound="-1"
+        eType="#//Habitant" eOpposite="#//Habitant/construction"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Maison" eSuperTypes="#//Construction"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Immeuble" eSuperTypes="#//Construction"/>
+</ecore:EPackage>

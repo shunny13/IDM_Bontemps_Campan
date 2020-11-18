@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/idm.annuaire.mm/src-gen" creationIcons="false"
+    editDirectory="/idm.annuaire.mm.edit/src-gen" editorDirectory="/idm.annuaire.mm.editor/src-gen"
+    modelPluginID="idm.annuaire.mm" modelName="Annuaire" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>annuaire.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Annuaire" basePackage="idm.annuaire.mm" disposableProviderFactory="true"
+      ecorePackage="annuaire.ecore#/">
+    <genClasses ecoreClass="annuaire.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute annuaire.ecore#//Person/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference annuaire.ecore#//Person/addresses"/>
+    </genClasses>
+    <genClasses ecoreClass="annuaire.ecore#//Address">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute annuaire.ecore#//Address/town"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute annuaire.ecore#//Address/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute annuaire.ecore#//Address/type"/>
+    </genClasses>
+    <genClasses ecoreClass="annuaire.ecore#//Building">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference annuaire.ecore#//Building/addresses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute annuaire.ecore#//Building/name"/>
+    </genClasses>
+    <genClasses ecoreClass="annuaire.ecore#//PersonsLibrary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference annuaire.ecore#//PersonsLibrary/persons"/>
+    </genClasses>
+    <genClasses ecoreClass="annuaire.ecore#//BuildingLibrary">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference annuaire.ecore#//BuildingLibrary/buildings"/>
+    </genClasses>
+    <genClasses ecoreClass="annuaire.ecore#//Libraries">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference annuaire.ecore#//Libraries/libraries"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference annuaire.ecore#//Libraries/buildings"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

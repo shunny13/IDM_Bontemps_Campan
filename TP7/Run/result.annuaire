@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:annuaire="http://www.example.org/annuaire">
+  <annuaire:Person name="John Koenig">
+    <addresses town="immeuble 1" street="Rue de la paix" type="unknown"/>
+    <addresses town="immeuble 2" street="Rue de Paris" type="unknown"/>
+  </annuaire:Person>
+  <annuaire:Person name="Helena Russell">
+    <addresses town="immeuble 1" street="Rue de Paris" type="unknown"/>
+  </annuaire:Person>
+  <annuaire:Person name="Tanya Alexander">
+    <addresses town="maison1" street="Rue de la paix" type="unknown"/>
+  </annuaire:Person>
+</xmi:XMI>
