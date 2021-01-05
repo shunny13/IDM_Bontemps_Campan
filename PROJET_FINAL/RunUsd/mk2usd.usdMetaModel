@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usdMetaModel:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usdMetaModel="http://www.example.org/usdMetaModel" pageName="\RunMarkdown\test.usd">
+  <element xsi:type="usdMetaModel:ElementContainer" grade="1">
+    <element xsi:type="usdMetaModel:Title" grade="1">
+      <textelement xsi:type="usdMetaModel:Text" text="PROJET IDM-Bootstrap : CAMPAN Nutu &amp; BONTEMPS Loïc"/>
+    </element>
+    <element xsi:type="usdMetaModel:Title" grade="2">
+      <textelement xsi:type="usdMetaModel:Emphasis">
+        <subtext xsi:type="usdMetaModel:Text" text="Compte rendu"/>
+      </textelement>
+    </element>
+    <element xsi:type="usdMetaModel:Paragraph">
+      <textelement xsi:type="usdMetaModel:Strong">
+        <subtext xsi:type="usdMetaModel:Text" text="Ce projet à été réalisé exclusivement en screen-sharing"/>
+      </textelement>
+    </element>
+  </element>
+  <element xsi:type="usdMetaModel:ElementContainer" grade="4">
+    <element xsi:type="usdMetaModel:ElementContainer" grade="3">
+      <element xsi:type="usdMetaModel:Title" grade="1">
+        <textelement xsi:type="usdMetaModel:Text" text="Difficultés rencontrés"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Difficultés à la compréhension générale de "/>
+        <textelement xsi:type="usdMetaModel:Strong">
+          <subtext xsi:type="usdMetaModel:Emphasis">
+            <subtext xsi:type="usdMetaModel:Text" text="qvto"/>
+          </subtext>
+        </textelement>
+        <textelement xsi:type="usdMetaModel:Text" text=" ( il fallait un peu plus de 10h pour pouvoir commencer à faire quelque chose de potable )"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Nous n'avons pas pu réaliser convenablement les "/>
+        <textelement xsi:type="usdMetaModel:Emphasis">
+          <subtext xsi:type="usdMetaModel:Text" text="uref"/>
+        </textelement>
+        <textelement xsi:type="usdMetaModel:Text" text=" mais nous savons comment le faire."/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Difficultés à travailler chacun de son côté à cause des différentes version de "/>
+        <textelement xsi:type="usdMetaModel:Emphasis">
+          <subtext xsi:type="usdMetaModel:Text" text="JDK et logiciels en général"/>
+        </textelement>
+        <textelement xsi:type="usdMetaModel:Text" text=". Par conséquent nous avons du rester souvent tard en screen-sharing."/>
+      </element>
+    </element>
+    <element xsi:type="usdMetaModel:ElementContainer" grade="4">
+      <element xsi:type="usdMetaModel:Title" grade="1">
+        <textelement xsi:type="usdMetaModel:Text" text="Ce que nous avons réussi"/>
+      </element>
+      <element xsi:type="usdMetaModel:ElementContainer" grade="2">
+        <element xsi:type="usdMetaModel:Title" grade="2">
+          <textelement xsi:type="usdMetaModel:Text" text="Buttons"/>
+        </element>
+        <element xsi:type="usdMetaModel:Button" url="www.google.com" title="">
+          <subtext xsi:type="usdMetaModel:Text" text="[btn-info]Button Info Google"/>
+        </element>
+        <element xsi:type="usdMetaModel:Button" url="www.fil.univ-lille.fr" title="">
+          <subtext xsi:type="usdMetaModel:Text" text="[btn-warning]Button Warning FIL"/>
+        </element>
+        <element xsi:type="usdMetaModel:Button" url="www.hoaxbuster.com" title="">
+          <subtext xsi:type="usdMetaModel:Text" text="[btn-danger]Button Danger HOAX"/>
+        </element>
+        <element xsi:type="usdMetaModel:Title" grade="2">
+          <textelement xsi:type="usdMetaModel:Text" text="Image"/>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Une image simple : "/>
+          <textelement xsi:type="usdMetaModel:Image" url="https://www.eclipse.org/images/egg-incubation.png" title="image">
+            <subtext xsi:type="usdMetaModel:Text" text="image"/>
+          </textelement>
+        </element>
+        <element xsi:type="usdMetaModel:Title" grade="2">
+          <textelement xsi:type="usdMetaModel:Text" text="Des liens"/>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Ceci est un Link  : "/>
+          <textelement xsi:type="usdMetaModel:Link" url="www.google.com" title="">
+            <subtext xsi:type="usdMetaModel:Text" text="Vers Google"/>
+          </textelement>
+        </element>
+        <element xsi:type="usdMetaModel:Title" grade="2">
+          <textelement xsi:type="usdMetaModel:Text" text="Strong, Italic"/>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Ceci est un Strong : "/>
+          <textelement xsi:type="usdMetaModel:Strong">
+            <subtext xsi:type="usdMetaModel:Text" text="BIG"/>
+          </textelement>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Ceci est un Italic : "/>
+          <textelement xsi:type="usdMetaModel:Emphasis">
+            <subtext xsi:type="usdMetaModel:Text" text="Tour de Pise"/>
+          </textelement>
+        </element>
+        <element xsi:type="usdMetaModel:Title" grade="2">
+          <textelement xsi:type="usdMetaModel:Text" text="Utilisations combinées de link et Strong,Italic"/>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Ceci est un Link avec un Strong dans le titre : "/>
+          <textelement xsi:type="usdMetaModel:Link" url="www.google.com" title="">
+            <subtext xsi:type="usdMetaModel:Text" text="Vers "/>
+            <subtext xsi:type="usdMetaModel:Strong">
+              <subtext xsi:type="usdMetaModel:Text" text="Google"/>
+            </subtext>
+          </textelement>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Ceci est un Link avec un Italique dans le titre : "/>
+          <textelement xsi:type="usdMetaModel:Link" url="www.fil.univ-lile.fr" title="">
+            <subtext xsi:type="usdMetaModel:Text" text="Vers "/>
+            <subtext xsi:type="usdMetaModel:Emphasis">
+              <subtext xsi:type="usdMetaModel:Text" text="FIL"/>
+            </subtext>
+          </textelement>
+        </element>
+        <element xsi:type="usdMetaModel:Title" grade="2">
+          <textelement xsi:type="usdMetaModel:Text" text="Travail sur les sections"/>
+        </element>
+        <element xsi:type="usdMetaModel:Paragraph">
+          <textelement xsi:type="usdMetaModel:Text" text="Toutes les sections ci-présentes sont visible par leur couleur. Chaque grade ( nombre de # dans le markdown ) correspond à une couleur."/>
+          <textelement xsi:type="usdMetaModel:Text" text="On distingue 4 types de sections : 1 - bleu , 2 - vert , 3 - rouge , 4 et plus - jaune."/>
+        </element>
+      </element>
+      <element xsi:type="usdMetaModel:Title" grade="3">
+        <textelement xsi:type="usdMetaModel:Text" text="Remerciements"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Merci au café matinal"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Merci pour la culture info"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Bon courage pour la suite"/>
+      </element>
+      <element xsi:type="usdMetaModel:Title" grade="3">
+        <textelement xsi:type="usdMetaModel:Text" text="Annexes"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Image USD Meta Model :"/>
+      </element>
+      <element xsi:type="usdMetaModel:Image" url="./usdMetaModel.jpg" title="image">
+        <subtext xsi:type="usdMetaModel:Text" text="image"/>
+      </element>
+      <element xsi:type="usdMetaModel:Paragraph">
+        <textelement xsi:type="usdMetaModel:Text" text="Image BOOTSTRAP Meta Model :"/>
+      </element>
+      <element xsi:type="usdMetaModel:Image" url="./bootstrapMetaModel.jpg" title="image">
+        <subtext xsi:type="usdMetaModel:Text" text="image"/>
+      </element>
+    </element>
+  </element>
+</usdMetaModel:Page>

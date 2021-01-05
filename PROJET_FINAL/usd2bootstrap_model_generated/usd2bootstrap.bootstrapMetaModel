@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bootstrapMetaModel:Page xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bootstrapMetaModel="http://www.example.org/bootstrapMetaModel" pageName="\RunMa.html">
+  <element xsi:type="bootstrapMetaModel:Section" grade="1">
+    <element xsi:type="bootstrapMetaModel:Header" grade="1">
+      <textelement xsi:type="bootstrapMetaModel:Text" text="PROJET IDM-Bootstrap : CAMPAN Nutu &amp; BONTEMPS Loïc"/>
+    </element>
+    <element xsi:type="bootstrapMetaModel:Header" grade="2">
+      <textelement xsi:type="bootstrapMetaModel:Italic">
+        <subtext xsi:type="bootstrapMetaModel:Text" text="Compte rendu"/>
+      </textelement>
+    </element>
+    <element xsi:type="bootstrapMetaModel:Paragraph">
+      <textelement xsi:type="bootstrapMetaModel:Bold">
+        <subtext xsi:type="bootstrapMetaModel:Text" text="Ce projet à été réalisé exclusivement en screen-sharing"/>
+      </textelement>
+    </element>
+  </element>
+  <element xsi:type="bootstrapMetaModel:Section" grade="4">
+    <element xsi:type="bootstrapMetaModel:Section" grade="3">
+      <element xsi:type="bootstrapMetaModel:Header" grade="1">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Difficultés rencontrés"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Difficultés à la compréhension générale de "/>
+        <textelement xsi:type="bootstrapMetaModel:Bold">
+          <subtext xsi:type="bootstrapMetaModel:Italic">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="qvto"/>
+          </subtext>
+        </textelement>
+        <textelement xsi:type="bootstrapMetaModel:Text" text=" ( il fallait un peu plus de 10h pour pouvoir commencer à faire quelque chose de potable )"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Nous n'avons pas pu réaliser convenablement les "/>
+        <textelement xsi:type="bootstrapMetaModel:Italic">
+          <subtext xsi:type="bootstrapMetaModel:Text" text="uref"/>
+        </textelement>
+        <textelement xsi:type="bootstrapMetaModel:Text" text=" mais nous savons comment le faire."/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Difficultés à travailler chacun de son côté à cause des différentes version de "/>
+        <textelement xsi:type="bootstrapMetaModel:Italic">
+          <subtext xsi:type="bootstrapMetaModel:Text" text="JDK et logiciels en général"/>
+        </textelement>
+        <textelement xsi:type="bootstrapMetaModel:Text" text=". Par conséquent nous avons du rester souvent tard en screen-sharing."/>
+      </element>
+    </element>
+    <element xsi:type="bootstrapMetaModel:Section" grade="4">
+      <element xsi:type="bootstrapMetaModel:Header" grade="1">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Ce que nous avons réussi"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Section" grade="2">
+        <element xsi:type="bootstrapMetaModel:Header" grade="2">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Buttons"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Button" myclass="btn-info" url="www.google.com" title="Button Info Google">
+          <subtext xsi:type="bootstrapMetaModel:Text" text="[btn-info]Button Info Google"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Button" myclass="btn-warning" url="www.fil.univ-lille.fr" title="Button Warning FIL">
+          <subtext xsi:type="bootstrapMetaModel:Text" text="[btn-warning]Button Warning FIL"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Button" myclass="btn-danger" url="www.hoaxbuster.com" title="Button Danger HOAX">
+          <subtext xsi:type="bootstrapMetaModel:Text" text="[btn-danger]Button Danger HOAX"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Header" grade="2">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Image"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Une image simple : "/>
+          <textelement xsi:type="bootstrapMetaModel:Image" url="https://www.eclipse.org/images/egg-incubation.png" title="image">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="image"/>
+          </textelement>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Header" grade="2">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Des liens"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Ceci est un Link  : "/>
+          <textelement xsi:type="bootstrapMetaModel:Link" url="www.google.com" title="">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="Vers Google"/>
+          </textelement>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Header" grade="2">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Strong, Italic"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Ceci est un Strong : "/>
+          <textelement xsi:type="bootstrapMetaModel:Bold">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="BIG"/>
+          </textelement>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Ceci est un Italic : "/>
+          <textelement xsi:type="bootstrapMetaModel:Italic">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="Tour de Pise"/>
+          </textelement>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Header" grade="2">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Utilisations combinées de link et Strong,Italic"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Ceci est un Link avec un Strong dans le titre : "/>
+          <textelement xsi:type="bootstrapMetaModel:Link" url="www.google.com" title="">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="Vers "/>
+            <subtext xsi:type="bootstrapMetaModel:Bold">
+              <subtext xsi:type="bootstrapMetaModel:Text" text="Google"/>
+            </subtext>
+          </textelement>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Ceci est un Link avec un Italique dans le titre : "/>
+          <textelement xsi:type="bootstrapMetaModel:Link" url="www.fil.univ-lile.fr" title="">
+            <subtext xsi:type="bootstrapMetaModel:Text" text="Vers "/>
+            <subtext xsi:type="bootstrapMetaModel:Italic">
+              <subtext xsi:type="bootstrapMetaModel:Text" text="FIL"/>
+            </subtext>
+          </textelement>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Header" grade="2">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Travail sur les sections"/>
+        </element>
+        <element xsi:type="bootstrapMetaModel:Paragraph">
+          <textelement xsi:type="bootstrapMetaModel:Text" text="Toutes les sections ci-présentes sont visible par leur couleur. Chaque grade ( nombre de # dans le markdown ) correspond à une couleur."/>
+          <textelement xsi:type="bootstrapMetaModel:Text" text="On distingue 4 types de sections : 1 - bleu , 2 - vert , 3 - rouge , 4 et plus - jaune."/>
+        </element>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Header" grade="3">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Remerciements"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Merci au café matinal"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Merci pour la culture info"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Bon courage pour la suite"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Header" grade="3">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Annexes"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Image USD Meta Model :"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Image" url="./usdMetaModel.jpg" title="image">
+        <subtext xsi:type="bootstrapMetaModel:Text" text="image"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Paragraph">
+        <textelement xsi:type="bootstrapMetaModel:Text" text="Image BOOTSTRAP Meta Model :"/>
+      </element>
+      <element xsi:type="bootstrapMetaModel:Image" url="./bootstrapMetaModel.jpg" title="image">
+        <subtext xsi:type="bootstrapMetaModel:Text" text="image"/>
+      </element>
+    </element>
+  </element>
+</bootstrapMetaModel:Page>

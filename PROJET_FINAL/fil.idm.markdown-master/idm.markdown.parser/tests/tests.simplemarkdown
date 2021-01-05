@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplemarkdown="http://www.example.org/simplemarkdown">
+  <simplemarkdown:Document name="src\resources\md\tests.md">
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="File for tests markdown parser"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Table"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:TableBlock">
+      <sections xsi:type="simplemarkdown:TableHead">
+        <rows rowNumber="1">
+          <cells isHeader="true">
+            <elements xsi:type="simplemarkdown:Text" text="Syntax"/>
+          </cells>
+          <cells isHeader="true">
+            <elements xsi:type="simplemarkdown:Text" text="Description"/>
+          </cells>
+        </rows>
+      </sections>
+      <sections xsi:type="simplemarkdown:TableSeparator">
+        <rows>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text=":-----------"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="-----------"/>
+          </cells>
+        </rows>
+      </sections>
+      <sections xsi:type="simplemarkdown:TableBody">
+        <rows rowNumber="1">
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Header"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Title"/>
+          </cells>
+        </rows>
+        <rows rowNumber="2">
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Paragraph"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Text"/>
+          </cells>
+        </rows>
+      </sections>
+    </contents>
+    <contents xsi:type="simplemarkdown:TableBlock">
+      <sections xsi:type="simplemarkdown:TableHead">
+        <rows rowNumber="1">
+          <cells isHeader="true">
+            <elements xsi:type="simplemarkdown:Text" text="Syntax"/>
+          </cells>
+          <cells isHeader="true">
+            <elements xsi:type="simplemarkdown:Text" text="Description"/>
+          </cells>
+        </rows>
+      </sections>
+      <sections xsi:type="simplemarkdown:TableSeparator">
+        <rows>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="-----------"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="-----------"/>
+          </cells>
+        </rows>
+      </sections>
+      <sections xsi:type="simplemarkdown:TableBody">
+        <rows rowNumber="1">
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Header"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Title"/>
+          </cells>
+        </rows>
+        <rows rowNumber="2">
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Paragraph"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Text"/>
+          </cells>
+        </rows>
+      </sections>
+    </contents>
+    <contents xsi:type="simplemarkdown:TableBlock">
+      <sections xsi:type="simplemarkdown:TableHead">
+        <rows rowNumber="1">
+          <cells isHeader="true">
+            <elements xsi:type="simplemarkdown:Text" text="Heading Centered"/>
+          </cells>
+          <cells isHeader="true">
+            <elements xsi:type="simplemarkdown:Text" text="Heading Left Aligned"/>
+          </cells>
+          <cells isHeader="true" alignement="CENTER">
+            <elements xsi:type="simplemarkdown:Text" text="Heading Centered"/>
+          </cells>
+          <cells isHeader="true" alignement="RIGHT">
+            <elements xsi:type="simplemarkdown:Text" text="Heading Right Aligned"/>
+          </cells>
+        </rows>
+      </sections>
+      <sections xsi:type="simplemarkdown:TableSeparator">
+        <rows>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="------------------------"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text=":-----------------------"/>
+          </cells>
+          <cells alignement="CENTER">
+            <elements xsi:type="simplemarkdown:Text" text=":------------------:"/>
+          </cells>
+          <cells alignement="RIGHT">
+            <elements xsi:type="simplemarkdown:Text" text="------------------------:"/>
+          </cells>
+        </rows>
+      </sections>
+      <sections xsi:type="simplemarkdown:TableBody">
+        <rows rowNumber="1">
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Cell text left aligned"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="Cell text left aligned"/>
+          </cells>
+          <cells alignement="CENTER">
+            <elements xsi:type="simplemarkdown:Text" text="Cell text centered"/>
+          </cells>
+          <cells alignement="RIGHT">
+            <elements xsi:type="simplemarkdown:Text" text="Cell text right aligned"/>
+          </cells>
+        </rows>
+        <rows rowNumber="2">
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="cell 21"/>
+          </cells>
+          <cells>
+            <elements xsi:type="simplemarkdown:Text" text="cell 22"/>
+          </cells>
+          <cells alignement="CENTER">
+            <elements xsi:type="simplemarkdown:Text" text="cell 22"/>
+          </cells>
+          <cells alignement="RIGHT">
+            <elements xsi:type="simplemarkdown:Text" text="cell 22"/>
+          </cells>
+        </rows>
+      </sections>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="See syntax and option :"/>
+      <elements xsi:type="simplemarkdown:Link" url="https://github.com/vsch/flexmark-java/wiki/Tables-Extension" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="Tables Extension"/>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Text, Strong, Emphasis"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Test "/>
+      <elements xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="ceci est un phrase en strong avec des "/>
+        <subtext xsi:type="simplemarkdown:Emphasis">
+          <subtext xsi:type="simplemarkdown:Text" text="italiques"/>
+        </subtext>
+        <subtext xsi:type="simplemarkdown:Text" text=" et un "/>
+        <subtext xsi:type="simplemarkdown:Link" url="#" title="">
+          <subtext xsi:type="simplemarkdown:Text" text="lien"/>
+        </subtext>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Ce paragraphe contient un "/>
+      <elements xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="Strong"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" et un "/>
+      <elements xsi:type="simplemarkdown:Emphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="Italique"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=". Il passe a la"/>
+      <elements xsi:type="simplemarkdown:Text" text="ligne."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Les "/>
+      <elements xsi:type="simplemarkdown:Link" url="#" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="Textes des liens peuvent auusi contenir des "/>
+        <subtext xsi:type="simplemarkdown:Emphasis">
+          <subtext xsi:type="simplemarkdown:Text" text="Strong"/>
+        </subtext>
+        <subtext xsi:type="simplemarkdown:Text" text="* et des "/>
+        <subtext xsi:type="simplemarkdown:Emphasis">
+          <subtext xsi:type="simplemarkdown:Text" text="Italiques"/>
+        </subtext>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Test Link, LinkRef et Reference"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Ceci est un Link avec un Strong dans le titre : "/>
+      <elements xsi:type="simplemarkdown:Link" url="#" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="A "/>
+        <subtext xsi:type="simplemarkdown:StrongEmphasis">
+          <subtext xsi:type="simplemarkdown:Text" text="Link"/>
+        </subtext>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Ceci est un LinkRef : "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="tests">
+        <subtext xsi:type="simplemarkdown:Text" text="My "/>
+        <subtext xsi:type="simplemarkdown:StrongEmphasis">
+          <subtext xsi:type="simplemarkdown:Text" text="linkref"/>
+        </subtext>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Un LinkRef contient un identifiant (ici 'tests' appel&#xe9; reference. Le Reference correspondante est d&#xe9;clar&#xe9;e &#xe0; la ligne suivante :"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Reference" reference="tests" url="http://search.msn.com/" title="MSN Search"/>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Ceci est une "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="uref">
+        <subtext xsi:type="simplemarkdown:Text" text="utilisation de ref"/>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Reference" reference="uref" url="http://search.msn.com/" title="uref test"/>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Markdown supports two style of links: inline and reference."/>
+      <elements xsi:type="simplemarkdown:Text" text="In both styles, the link text is delimited by "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="square brackets">
+        <subtext xsi:type="simplemarkdown:Text" text="square brackets"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="Inline Links Doc"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="To create an inline link, use a set of regular parentheses immediately after the link text&#x2019;s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="This is [an example](http://example.com/ &quot;Title&quot;) inline link.&#xD;&#xA;"/>
+      <codelines text="&#xD;&#xA;"/>
+      <codelines text="[This link](http://example.net/) has no title attribute.&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Will produce:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="&lt;p>This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;>&#xD;&#xA;"/>
+      <codelines text="an example&lt;/a> inline link.&lt;/p>&#xD;&#xA;"/>
+      <codelines text="&#xD;&#xA;"/>
+      <codelines text="&lt;p>&lt;a href=&quot;http://example.net/&quot;>This link&lt;/a> has no&#xD;&#xA;"/>
+      <codelines text="title attribute.&lt;/p>&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="If you&#x2019;re referring to a local resource on the same server, you can use relative paths:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="See my [About](/about/) page for details.   &#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="Inline links tests"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is "/>
+      <elements xsi:type="simplemarkdown:Link" url="http://example.com/" title="Title">
+        <subtext xsi:type="simplemarkdown:Text" text="an example"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" inline link."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Link" url="http://example.net/" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="This link"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" has no title attribute."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="See my "/>
+      <elements xsi:type="simplemarkdown:Link" url="/about/" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="About"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" page for details."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="Reference Links Docs"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="This is [an example][id] reference-style link.&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="You can optionally use a space to separate the sets of brackets:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="This is [an example] [id] reference-style link.&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Then, anywhere in the document, you define your link label like this, on a line by itself:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="[id]: http://example.com/  &quot;Optional Title Here&quot;&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="That is:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:BulletList">
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Square brackets containing the link identifier (optionally indented from the left margin using up to three spaces);"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="followed by a colon;"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="followed by one or more spaces (or tabs);"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="followed by the URL for the link;"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses."/>
+        </elements>
+      </items>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="Reference Links Tests"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="id">
+        <subtext xsi:type="simplemarkdown:Text" text="an example"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" reference-style link."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="an example">
+        <subtext xsi:type="simplemarkdown:Text" text="an example"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="id">
+        <subtext xsi:type="simplemarkdown:Text" text="id"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" reference-style link with space. "/>
+      <elements xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="It doesn't work with our parser"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Definitions of the id:"/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="id">
+        <subtext xsi:type="simplemarkdown:Text" text="id"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=": http://example.com/  &quot;Optional Title Here&quot;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="References = Link definition Docs"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="When you specify the link with an ID, you must then define this ID."/>
+      <elements xsi:type="simplemarkdown:Text" text="The definition of the ID is called a "/>
+      <elements xsi:type="simplemarkdown:Code" text="Reference"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="References can be placed anywhere in your Markdown document. I tend to put them immediately after each paragraph in which they&#x2019;re used, but if you want, you can put them all at the end of your document, sort of like footnotes."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Link def :"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="I get 10 times more traffic from [Google] [1] than from&#xD;&#xA;"/>
+      <codelines text="[Yahoo] [2] or [MSN] [3].&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="References defs :"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="  [1]: http://google.com/        &quot;Google&quot;&#xD;&#xA;"/>
+      <codelines text="  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;&#xD;&#xA;"/>
+      <codelines text="  [3]: http://search.msn.com/    &quot;MSN Search&quot;&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="References = Link definition Tests"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="I get 10 times more traffic from "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="Google">
+        <subtext xsi:type="simplemarkdown:Text" text="Google"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="1">
+        <subtext xsi:type="simplemarkdown:Text" text="1"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" than from"/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="Yahoo">
+        <subtext xsi:type="simplemarkdown:Text" text="Yahoo"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="2">
+        <subtext xsi:type="simplemarkdown:Text" text="2"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" or "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="MSN">
+        <subtext xsi:type="simplemarkdown:Text" text="MSN"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="3">
+        <subtext xsi:type="simplemarkdown:Text" text="3"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Reference" reference="1" url="http://google.com/" title="Google"/>
+    <contents xsi:type="simplemarkdown:Reference" reference="2" url="http://search.yahoo.com/" title="Yahoo Search"/>
+    <contents xsi:type="simplemarkdown:Reference" reference="3" url="http://search.msn.com/" title="MSN Search"/>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="The following three link definitions are equivalent (next line is not visible in final view):"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Reference" reference="foo" url="http://example.com/" title="Optional Title Here"/>
+    <contents xsi:type="simplemarkdown:Reference" reference="foo" url="http://example.com/" title="Optional Title Here"/>
+    <contents xsi:type="simplemarkdown:Reference" reference="foo" url="http://example.com/" title="Optional Title Here"/>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is a link ref with implicit link "/>
+      <elements xsi:type="simplemarkdown:LinkWithRef" reference="google">
+        <subtext xsi:type="simplemarkdown:Text" text="google"/>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Then the definition is (next line is not visible in final view):"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Reference" reference="Google" url="http://google.com/" title=""/>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Code"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab. For example, given this input:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is a normal paragraph:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="This is a code block.&#xA;"/>
+      <codelines text="On several line&#xA;"/>
+      <codelines text="&#xA;"/>
+      <codelines text="And even with a blank line&#xA;"/>
+      <codelines text="&#xA;"/>
+      <codelines text="[link in code](#)&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:CodeBlock">
+      <codelines text="Code en debut de ligne&#xD;&#xA;"/>
+      <codelines text="&#xD;&#xA;"/>
+      <codelines text="Avec ````&#xD;&#xA;"/>
+      <codelines text="Comme separateur&#xD;&#xA;"/>
+      <codelines text="  [link in code](#)&#xD;&#xA;"/>
+      <codelines text="&#xD;&#xA;"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="A paragraphe with "/>
+      <elements xsi:type="simplemarkdown:Code" text="inline code [link in code](#)"/>
+      <elements xsi:type="simplemarkdown:Text" text=" and an end."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is a paragraphe."/>
+      <elements xsi:type="simplemarkdown:Text" text="It continue on this line"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="This is a 2nd paragraphe."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="Title level 2"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Hello the world."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="2">
+      <elements xsi:type="simplemarkdown:Text" text="2 Title level 2"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="A line with "/>
+      <elements xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="strong"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" and an "/>
+      <elements xsi:type="simplemarkdown:Emphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="italic"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+      <elements xsi:type="simplemarkdown:Text" text="Et aussi un "/>
+      <elements xsi:type="simplemarkdown:Emphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="mix"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="A line with double space at the end"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="A normal line."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Links"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="A paragraph with a  "/>
+      <elements xsi:type="simplemarkdown:Link" url="#" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="link"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" not at the end."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Link" url="#" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="A link"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="at beginning of text."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Try "/>
+      <elements xsi:type="simplemarkdown:Link" url="https://wiki.eclipse.org/The_Official_Eclipse_FAQs#Workspace_and_Resources_API" title="">
+        <subtext xsi:type="simplemarkdown:StrongEmphasis">
+          <subtext xsi:type="simplemarkdown:Text" text="strong"/>
+        </subtext>
+        <subtext xsi:type="simplemarkdown:Text" text=" title"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Now, try "/>
+      <elements xsi:type="simplemarkdown:Link" url="https://wiki.eclipse.org/The_Official_Eclipse_FAQs#Workspace_and_Resources_API" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="image "/>
+        <subtext xsi:type="simplemarkdown:Image" url="https://www.eclipse.org/images/egg-incubation.png" title="">
+          <subtext xsi:type="simplemarkdown:Text" text="image"/>
+        </subtext>
+        <subtext xsi:type="simplemarkdown:Text" text=""/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="And now an image : "/>
+      <elements xsi:type="simplemarkdown:Image" url="https://www.eclipse.org/images/egg-incubation.png" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="image"/>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="And finally a "/>
+      <elements xsi:type="simplemarkdown:Link" url="#" title="title">
+        <subtext xsi:type="simplemarkdown:Text" text="linkwith title"/>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Title level 1"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="List :"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:BulletList">
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="start list. This is a paragraph"/>
+          <elements xsi:type="simplemarkdown:Text" text="on multiple lines."/>
+        </elements>
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="And another paragraph"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="item 2."/>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="level 2 item 1"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="level 2 item 2"/>
+            </elements>
+          </items>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="level 2 item 3"/>
+            </elements>
+            <elements xsi:type="simplemarkdown:BulletList">
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="level 3 item 1"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="level 3 item 2"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="level 3 item 3"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="level 4 item 1"/>
+                </elements>
+                <elements xsi:type="simplemarkdown:BulletList">
+                  <items xsi:type="simplemarkdown:BulletListItem">
+                    <elements xsi:type="simplemarkdown:Paragraph">
+                      <elements xsi:type="simplemarkdown:Text" text="next level ??"/>
+                    </elements>
+                  </items>
+                </elements>
+              </items>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="level 2 item 4"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="level 2 item 5"/>
+            </elements>
+          </items>
+        </elements>
+      </items>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="un paragraphe"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Try Citation"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Citation :"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:BlockQuote">
+      <contents xsi:type="simplemarkdown:Paragraph">
+        <elements xsi:type="simplemarkdown:Text" text="Start citation"/>
+      </contents>
+      <contents xsi:type="simplemarkdown:BlockQuote">
+        <contents xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="double citation"/>
+        </contents>
+        <contents xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="list in citation"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="item 2"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="item 3"/>
+              <elements xsi:type="simplemarkdown:Text" text="fin de list"/>
+            </elements>
+          </items>
+        </contents>
+      </contents>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Titre avec un "/>
+      <elements xsi:type="simplemarkdown:Link" url="#" title="">
+        <subtext xsi:type="simplemarkdown:Text" text="lien"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=" et un "/>
+      <elements xsi:type="simplemarkdown:Emphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="italic"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text="*"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Un dernier paragraphe."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Lines"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:HorizontalLine"/>
+    <contents xsi:type="simplemarkdown:HorizontalLine"/>
+    <contents xsi:type="simplemarkdown:HorizontalLine"/>
+    <contents xsi:type="simplemarkdown:HorizontalLine"/>
+  </simplemarkdown:Document>
+  <simplemarkdown:Document name="src\resources\md\installPapyrus.md">
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Installer Papyrus pour IDM et Projects"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Vous pouvez installer Papyrus sur votre machine Windows, Linux et Mac."/>
+      <elements xsi:type="simplemarkdown:Text" text="Dans les cours, nous utilisons Papyrus et d'autres fonctionalit&#xe9;s comme Acceleo, Sirius, XText ..."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Pour avoir la m&#xea;me configuration que au M5, vous devez installer les projets Eclipses suivants (voir plus loin pour comment le faire):"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:BulletList">
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Eclipse modeling"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Papyrus"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Papyrus Designer (g&#xe9;n&#xe9;ration de code Java)"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Acceleo (Model to Text)"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Sirius (Modeleur Graphique)"/>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="XText (pour &#xe9;crire des DSL)"/>
+        </elements>
+      </items>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Pour "/>
+      <elements xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="l'ann&#xe9;e 2020-2021"/>
+      </elements>
+      <elements xsi:type="simplemarkdown:Text" text=", la version du M5 est "/>
+      <elements xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="Eclipse Modeling 2020-06"/>
+      </elements>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="ATENTION : Ce n'est pas la toute derni&#xe8;re version d'Eclipse. En effet, la derni&#xe8;re version d'Eclipse est incompatible avec Papyrus (le Model Explorer n'apparait pas)."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Title" level="1">
+      <elements xsi:type="simplemarkdown:Text" text="Comment installer les projets Eclipses:"/>
+    </contents>
+    <contents xsi:type="simplemarkdown:Paragraph">
+      <elements xsi:type="simplemarkdown:Text" text="Vous devez commencer par installer Eclipse Modeling."/>
+    </contents>
+    <contents xsi:type="simplemarkdown:BulletList">
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Link" url="installerPapyrus.html" title="">
+            <subtext xsi:type="simplemarkdown:Text" text="Installer Eclipse Modeling et Papyrus"/>
+          </elements>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Installer Papyrus Designer (g&#xe9;n&#xe9;rateur de code Java)"/>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Faites un Drag du bouton suivant vers votre installation de Eclipse"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Link" url="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3724955" title="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client">
+                <subtext xsi:type="simplemarkdown:Image" url="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg" title="">
+                  <subtext xsi:type="simplemarkdown:Text" text="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client"/>
+                </subtext>
+              </elements>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Ou "/>
+              <elements xsi:type="simplemarkdown:Link" url="installerPapyrusDesigner.html" title="">
+                <subtext xsi:type="simplemarkdown:Text" text="Installer Papyrus Designer"/>
+              </elements>
+            </elements>
+          </items>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Installer Acceleo"/>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Link" url="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=195" title="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client">
+                <subtext xsi:type="simplemarkdown:Image" url="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg" title="">
+                  <subtext xsi:type="simplemarkdown:Text" text="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client"/>
+                </subtext>
+              </elements>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="ou https://www.eclipse.org/acceleo/download.html"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="ou Utiliser le Marketplace : Acceleo"/>
+            </elements>
+          </items>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Installer Sirius"/>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Link" url="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1318261" title="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client">
+                <subtext xsi:type="simplemarkdown:Image" url="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg" title="">
+                  <subtext xsi:type="simplemarkdown:Text" text="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client"/>
+                </subtext>
+              </elements>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Ou https://www.eclipse.org/sirius/download.html"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Ou utiliser le Marketplace : Sirius"/>
+            </elements>
+          </items>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Installer XText"/>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Link" url="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1073" title="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client">
+                <subtext xsi:type="simplemarkdown:Image" url="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg" title="">
+                  <subtext xsi:type="simplemarkdown:Text" text="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client"/>
+                </subtext>
+              </elements>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Ou Utiliser le Marketplace : XText"/>
+            </elements>
+          </items>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Installer "/>
+          <elements xsi:type="simplemarkdown:StrongEmphasis">
+            <subtext xsi:type="simplemarkdown:Text" text="ATL (Model Transformation Language)"/>
+          </elements>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Il faut utiliser l'"/>
+              <elements xsi:type="simplemarkdown:Code" text="update site"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="A trouver ici : https://www.eclipse.org/atl/downloads/"/>
+            </elements>
+            <elements xsi:type="simplemarkdown:BulletList">
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="Pour 2020-21:"/>
+                </elements>
+                <elements xsi:type="simplemarkdown:BulletList">
+                  <items xsi:type="simplemarkdown:BulletListItem">
+                    <elements xsi:type="simplemarkdown:Paragraph">
+                      <elements xsi:type="simplemarkdown:Text" text="https://download.eclipse.org/mmt/atl/updates/releases"/>
+                    </elements>
+                  </items>
+                </elements>
+              </items>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Copiez l'URL de l'updatesite (ou ouvrez la pour avoir un mode d'emploi)"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Dans Eclipse :"/>
+            </elements>
+            <elements xsi:type="simplemarkdown:BulletList">
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Code" text="Help -> Install New Softwares"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="collez l'URL dans "/>
+                  <elements xsi:type="simplemarkdown:Code" text="Work with:"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Code" text="Next"/>
+                  <elements xsi:type="simplemarkdown:Text" text=" ..."/>
+                </elements>
+              </items>
+            </elements>
+          </items>
+        </elements>
+      </items>
+      <items xsi:type="simplemarkdown:BulletListItem">
+        <elements xsi:type="simplemarkdown:Paragraph">
+          <elements xsi:type="simplemarkdown:Text" text="Installer "/>
+          <elements xsi:type="simplemarkdown:StrongEmphasis">
+            <subtext xsi:type="simplemarkdown:Text" text="QVTo"/>
+          </elements>
+        </elements>
+        <elements xsi:type="simplemarkdown:BulletList">
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Il faut utiliser l'"/>
+              <elements xsi:type="simplemarkdown:Code" text="update site"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="A trouver ici : https://projects.eclipse.org/projects/modeling.mmt.qvt-oml/downloads"/>
+            </elements>
+            <elements xsi:type="simplemarkdown:BulletList">
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="Pour 2020-21:"/>
+                </elements>
+                <elements xsi:type="simplemarkdown:BulletList">
+                  <items xsi:type="simplemarkdown:BulletListItem">
+                    <elements xsi:type="simplemarkdown:Paragraph">
+                      <elements xsi:type="simplemarkdown:Text" text="https://download.eclipse.org/mmt/qvto/updates/releases"/>
+                    </elements>
+                  </items>
+                </elements>
+              </items>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Copiez l'URL de l'updatesite (ou ouvrez la pour avoir un mode d'emploi)"/>
+            </elements>
+          </items>
+          <items xsi:type="simplemarkdown:BulletListItem">
+            <elements xsi:type="simplemarkdown:Paragraph">
+              <elements xsi:type="simplemarkdown:Text" text="Dans Eclipse :"/>
+            </elements>
+            <elements xsi:type="simplemarkdown:BulletList">
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Code" text="Help -> Install New Softwares"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Text" text="collez l'URL dans "/>
+                  <elements xsi:type="simplemarkdown:Code" text="Work with:"/>
+                </elements>
+              </items>
+              <items xsi:type="simplemarkdown:BulletListItem">
+                <elements xsi:type="simplemarkdown:Paragraph">
+                  <elements xsi:type="simplemarkdown:Code" text="Next"/>
+                  <elements xsi:type="simplemarkdown:Text" text=" ..."/>
+                </elements>
+              </items>
+            </elements>
+          </items>
+        </elements>
+      </items>
+    </contents>
+  </simplemarkdown:Document>
+</xmi:XMI>

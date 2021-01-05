@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/usdMetaModel/src-gen" creationIcons="false" editDirectory="/usdMetaModel.edit/src-gen"
+    editorDirectory="/usdMetaModel.editor/src-gen" modelPluginID="usdMetaModel" modelName="UsdMetaModel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>usdMetaModel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="UsdMetaModel" disposableProviderFactory="true" ecorePackage="usdMetaModel.ecore#/">
+    <genClasses ecoreClass="usdMetaModel.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//Text/text"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//CompositeTextElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usdMetaModel.ecore#//CompositeTextElement/subtext"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//TextElement"/>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Strong">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//Strong/text"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Emphasis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//Emphasis/text"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//UrlBasedLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//UrlBasedLink/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//UrlBasedLink/title"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//LinkWithRef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//LinkWithRef/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Link"/>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Image"/>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Button"/>
+    <genClasses ecoreClass="usdMetaModel.ecore#//TextContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usdMetaModel.ecore#//TextContainer/textelement"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Element"/>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Page">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//Page/pageName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usdMetaModel.ecore#//Page/element"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//ElementContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference usdMetaModel.ecore#//ElementContainer/element"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//ElementContainer/grade"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Title">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute usdMetaModel.ecore#//Title/grade"/>
+    </genClasses>
+    <genClasses ecoreClass="usdMetaModel.ecore#//Paragraph"/>
+  </genPackages>
+</genmodel:GenModel>

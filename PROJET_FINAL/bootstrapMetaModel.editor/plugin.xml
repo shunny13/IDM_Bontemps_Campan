@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated bootstrapMetaModel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="bootstrapMetaModel.presentation.BootstrapMetaModelModelWizardID"
+            name="%_UI_BootstrapMetaModelModelWizard_label"
+            class="bootstrapMetaModel.presentation.BootstrapMetaModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BootstrapMetaModelModelFile.gif">
+         <description>%_UI_BootstrapMetaModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated bootstrapMetaModel -->
+      <editor
+            id="bootstrapMetaModel.presentation.BootstrapMetaModelEditorID"
+            name="%_UI_BootstrapMetaModelEditor_label"
+            icon="icons/full/obj16/BootstrapMetaModelModelFile.gif"
+            extensions="bootstrapmetamodel"
+            class="bootstrapMetaModel.presentation.BootstrapMetaModelEditor"
+            contributorClass="bootstrapMetaModel.presentation.BootstrapMetaModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,195 @@
+modeltype usdMM "strict" uses "http://www.example.org/usdMetaModel";
+modeltype bsMM "strict" uses "http://www.example.org/bootstrapMetaModel";
+
+transformation usd2bootstrap(in usd :  usdMM  , out bs : bsMM);
+
+main() {
+	
+		var page : bsMM::Page := object bsMM::Page{
+		usd.rootObjects()[Page] -> forOne(doc) {
+			pageName := doc.pageName.substring(1,doc.pageName.length() - 15) +".html";
+			element += doc.element -> map element2element();
+		}
+	}
+}
+
+//On va mapper les Elements de usd vers des elements de bootstrap
+
+mapping usdMM::Element::element2element() : bsMM::Element{
+	init{
+		switch {
+		
+			case (self.oclIsTypeOf(usdMM::Title)){
+				result := object bsMM::Header{
+					grade := self.oclAsType(usdMM::Title).grade;
+					textelement += self.oclAsType(usdMM::Title).textelement -> map usdTextElement2bsTextElement();
+					
+					};
+					
+			};
+			
+			case (self.oclIsTypeOf(usdMM::Paragraph)){					
+					result := object bsMM::Paragraph{	
+						textelement += self.oclAsType(usdMM::Paragraph).textelement -> map usdTextElement2bsTextElement();
+						};
+					
+			};
+			
+			case (self.oclIsTypeOf(usdMM::Image)){
+				result := object bsMM::Image{
+					url := self.oclAsType(usdMM::Image).url;
+					//title := self.oclAsType(usdMM::Image).title;
+					title := self.oclAsType(usdMM::Image).title;
+					subtext += self.oclAsType(usdMM::Image).subtext -> map usdTextElement2bsTextElement();
+					};
+			};
+			
+			case (self.oclIsTypeOf(usdMM::Link)){
+					result := object bsMM::Link{
+						url := self.oclAsType(usdMM::Link).url;
+						title := self.oclAsType(usdMM::Link).title;
+						subtext+= self.oclAsType(usdMM::Link).subtext -> map usdTextElement2bsTextElement();
+					};
+			};
+			//On fait un parsing pour récupérer la classe du button ainsi que son texte
+			case(self.oclIsTypeOf(usdMM::Button)){
+				var textInside : String := self.oclAsType(usdMM::Button).subtext -> first().oclAsType(usdMM::Text).text;
+				var myClass : String ="";
+				
+				var i : Integer = 2;
+				var myChar : String ="";
+				var myTitle : String ="";
+				
+				while(i < textInside.length()){
+					myChar := textInside.substring(i,i);
+					if(myChar = ']'){
+						myTitle := myTitle + textInside.substring(i+1, textInside.length());
+						break;
+						}
+					else{
+						myClass := myClass+myChar;
+					};
+
+					i := i+1;
+				};
+
+				result := object bsMM::Button{
+					url := self.oclAsType(usdMM::Button).url;
+					title := myTitle;
+					subtext := self.oclAsType(usdMM::Button).subtext -> map usdTextElement2bsTextElement();
+					myclass := myClass;
+					
+				};
+				
+
+			};
+			
+			case(self.oclIsTypeOf(usdMM::ElementContainer)){
+ 				result := object bsMM::Section {
+ 					grade := self.oclAsType(usdMM::ElementContainer).grade;
+                    element += self.oclAsType(usdMM::ElementContainer).element -> map element2element();
+                };
+			}
+		}
+			
+	}
+}	
+
+
+mapping usdMM::TextElement::usdTextElement2bsTextElement() : bsMM::TextElement{
+	
+	init{	
+		switch{
+		/* Text case */
+			
+			case(self.oclIsTypeOf(usdMM::Text)){
+				result := object bsMM::Text{
+					text := self.oclAsType(usdMM::Text).text;
+					
+				};
+			};
+			
+			
+			/*Composite Text Element Case */
+			case(self.oclIsTypeOf(usdMM::Emphasis)){
+				result := object bsMM::Italic{
+					text := self.oclAsType(usdMM::Emphasis).text;
+					subtext+= self.oclAsType(usdMM::Emphasis).subtext -> map usdTextElement2bsTextElement();
+				};
+				
+				var debug : String ="";
+				
+			};
+			case(self.oclIsTypeOf(usdMM::Strong)){
+				result := object bsMM::Bold{
+					text := self.oclAsType(usdMM::Strong).text;
+					subtext+= self.oclAsType(usdMM::Strong).subtext -> map usdTextElement2bsTextElement();
+				};
+				var debug : String ="";
+								
+			};
+			//On fait un parsing pour récupérer la classe du button ainsi que son texte
+			case(self.oclIsTypeOf(usdMM::Button)){
+				var textInside : String := self.oclAsType(usdMM::Button).subtext -> first().oclAsType(usdMM::Text).text;
+				var myClass : String ="";
+				
+				var i : Integer = 2;
+				var myChar : String ="";
+				var myTitle : String ="";
+				
+				while(i < textInside.length()){
+					myChar := textInside.substring(i,i);
+					if(myChar = ']'){
+						myTitle := myTitle + textInside.substring(i+1, textInside.length());
+						break;
+						}
+					else{
+						myClass := myClass+myChar;
+					};
+
+					i := i+1;
+				};
+
+				result := object bsMM::Button{
+					url := self.oclAsType(usdMM::Button).url;
+					title := myTitle;
+					subtext := self.oclAsType(usdMM::Button).subtext -> map usdTextElement2bsTextElement();
+					myclass := myClass;
+					
+				};
+
+			}
+
+			case(self.oclIsTypeOf(usdMM::Link)){
+					result := object bsMM::Link{
+						url := self.oclAsType(usdMM::Link).url;
+						title := self.oclAsType(usdMM::Link).title;
+						subtext+= self.oclAsType(usdMM::Link).subtext -> map usdTextElement2bsTextElement();
+					};
+
+			};
+			case(self.oclIsTypeOf(usdMM::Image)){
+				result := object bsMM::Image{
+					url := self.oclAsType(usdMM::Image).url;
+					subtext += self.oclAsType(usdMM::Image).subtext -> map usdTextElement2bsTextElement();
+					title := self.oclAsType(usdMM::Image).title;
+					};
+								
+			};
+			case(self.oclIsTypeOf(usdMM::LinkWithRef)){
+				result := object bsMM::LinkWithRef{
+					reference := self.oclAsType(usdMM::LinkWithRef).reference;
+					subtext+= self.oclAsType(usdMM::LinkWithRef).subtext -> map usdTextElement2bsTextElement();
+				};
+					
+			};
+			
+		}
+	}
+}
+
+
+
+
+
+

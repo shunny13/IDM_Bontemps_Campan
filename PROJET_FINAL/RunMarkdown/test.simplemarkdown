@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ASCII"?>
+<simplemarkdown:Document xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simplemarkdown="http://www.example.org/simplemarkdown" name="\RunMarkdown\test.simplemarkdown">
+  <contents xsi:type="simplemarkdown:Title" level="1">
+    <elements xsi:type="simplemarkdown:Text" text="~Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="1">
+    <elements xsi:type="simplemarkdown:Text" text="PROJET IDM-Bootstrap : CAMPAN Nutu &amp; BONTEMPS Lo&#xef;c"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Emphasis">
+      <subtext xsi:type="simplemarkdown:Text" text="Compte rendu"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:StrongEmphasis">
+      <subtext xsi:type="simplemarkdown:Text" text="Ce projet &#xe0; &#xe9;t&#xe9; r&#xe9;alis&#xe9; exclusivement en screen-sharing"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="1">
+    <elements xsi:type="simplemarkdown:Text" text="/Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="4">
+    <elements xsi:type="simplemarkdown:Text" text="~Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="3">
+    <elements xsi:type="simplemarkdown:Text" text="~Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="1">
+    <elements xsi:type="simplemarkdown:Text" text="Difficult&#xe9;s rencontr&#xe9;s"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Difficult&#xe9;s &#xe0; la compr&#xe9;hension g&#xe9;n&#xe9;rale de "/>
+    <elements xsi:type="simplemarkdown:StrongEmphasis">
+      <subtext xsi:type="simplemarkdown:Emphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="qvto"/>
+      </subtext>
+    </elements>
+    <elements xsi:type="simplemarkdown:Text" text=" ( il fallait un peu plus de 10h pour pouvoir commencer &#xe0; faire quelque chose de potable )"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Nous n'avons pas pu r&#xe9;aliser convenablement les "/>
+    <elements xsi:type="simplemarkdown:Emphasis">
+      <subtext xsi:type="simplemarkdown:Text" text="uref"/>
+    </elements>
+    <elements xsi:type="simplemarkdown:Text" text=" mais nous savons comment le faire."/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Difficult&#xe9;s &#xe0; travailler chacun de son c&#xf4;t&#xe9; &#xe0; cause des diff&#xe9;rentes version de "/>
+    <elements xsi:type="simplemarkdown:Emphasis">
+      <subtext xsi:type="simplemarkdown:Text" text="JDK et logiciels en g&#xe9;n&#xe9;ral"/>
+    </elements>
+    <elements xsi:type="simplemarkdown:Text" text=". Par cons&#xe9;quent nous avons du rester souvent tard en screen-sharing."/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="3">
+    <elements xsi:type="simplemarkdown:Text" text="/Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="4">
+    <elements xsi:type="simplemarkdown:Text" text="~Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="1">
+    <elements xsi:type="simplemarkdown:Text" text="Ce que nous avons r&#xe9;ussi"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="~Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="Buttons"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Link" url="www.google.com" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="[btn-info]Button Info Google"/>
+    </elements>
+    <elements xsi:type="simplemarkdown:Link" url="www.fil.univ-lille.fr" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="[btn-warning]Button Warning FIL"/>
+    </elements>
+    <elements xsi:type="simplemarkdown:Link" url="www.hoaxbuster.com" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="[btn-danger]Button Danger HOAX"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="Image"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Une image simple : "/>
+    <elements xsi:type="simplemarkdown:Image" url="https://www.eclipse.org/images/egg-incubation.png" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="image"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="Des liens"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Ceci est un Link  : "/>
+    <elements xsi:type="simplemarkdown:Link" url="www.google.com" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="Vers Google"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="Strong, Italic"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Ceci est un Strong : "/>
+    <elements xsi:type="simplemarkdown:StrongEmphasis">
+      <subtext xsi:type="simplemarkdown:Text" text="BIG"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Ceci est un Italic : "/>
+    <elements xsi:type="simplemarkdown:Emphasis">
+      <subtext xsi:type="simplemarkdown:Text" text="Tour de Pise"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="Utilisations combin&#xe9;es de link et Strong,Italic"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Ceci est un Link avec un Strong dans le titre : "/>
+    <elements xsi:type="simplemarkdown:Link" url="www.google.com" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="Vers "/>
+      <subtext xsi:type="simplemarkdown:StrongEmphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="Google"/>
+      </subtext>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Ceci est un Link avec un Italique dans le titre : "/>
+    <elements xsi:type="simplemarkdown:Link" url="www.fil.univ-lile.fr" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="Vers "/>
+      <subtext xsi:type="simplemarkdown:Emphasis">
+        <subtext xsi:type="simplemarkdown:Text" text="FIL"/>
+      </subtext>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="Travail sur les sections"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Toutes les sections ci-pr&#xe9;sentes sont visible par leur couleur. Chaque grade ( nombre de # dans le markdown ) correspond &#xe0; une couleur."/>
+    <elements xsi:type="simplemarkdown:Text" text="On distingue 4 types de sections : 1 - bleu , 2 - vert , 3 - rouge , 4 et plus - jaune."/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="2">
+    <elements xsi:type="simplemarkdown:Text" text="/Section"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="3">
+    <elements xsi:type="simplemarkdown:Text" text="Remerciements"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Merci au caf&#xe9; matinal"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Merci pour la culture info"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Bon courage pour la suite"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Title" level="3">
+    <elements xsi:type="simplemarkdown:Text" text="Annexes"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Image USD Meta Model :"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Image" url="./usdMetaModel.jpg" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="image"/>
+    </elements>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Text" text="Image BOOTSTRAP Meta Model :"/>
+  </contents>
+  <contents xsi:type="simplemarkdown:Paragraph">
+    <elements xsi:type="simplemarkdown:Image" url="./bootstrapMetaModel.jpg" title="">
+      <subtext xsi:type="simplemarkdown:Text" text="image"/>
+    </elements>
+  </contents>
+</simplemarkdown:Document>

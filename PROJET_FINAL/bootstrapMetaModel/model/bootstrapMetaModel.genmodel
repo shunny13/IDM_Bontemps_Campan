@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/bootstrapMetaModel/src-gen" creationIcons="false"
+    editDirectory="/bootstrapMetaModel.edit/src-gen" editorDirectory="/bootstrapMetaModel.editor/src-gen"
+    modelPluginID="bootstrapMetaModel" modelName="BootstrapMetaModel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>bootstrapMetaModel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="BootstrapMetaModel" disposableProviderFactory="true" ecorePackage="bootstrapMetaModel.ecore#/">
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bootstrapMetaModel.ecore#//Page/element"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Page/pageName"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Element">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Element/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Element/myclass"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//TextContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bootstrapMetaModel.ecore#//TextContainer/textelement"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//TextElement"/>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Text/text"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//CompositeTextElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bootstrapMetaModel.ecore#//CompositeTextElement/subtext"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Bold">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Bold/text"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Italic">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Italic/text"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//UrlBasedLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//UrlBasedLink/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//UrlBasedLink/title"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//LinkWithRef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//LinkWithRef/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Link"/>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Image"/>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Button"/>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Header">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Header/grade"/>
+    </genClasses>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Paragraph"/>
+    <genClasses ecoreClass="bootstrapMetaModel.ecore#//Section">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference bootstrapMetaModel.ecore#//Section/element"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bootstrapMetaModel.ecore#//Section/grade"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,217 @@
+modeltype usdMM "strict" uses "http://www.example.org/usdMetaModel";
+modeltype markdownMM "strict" uses "http://www.example.org/simplemarkdown";
+
+transformation titlemd2titleusd(in markdown : markdownMM, out usd : usdMM);
+
+
+
+main() {
+				// on récupére le document
+			var doc := markdown.rootObjects()[Document] -> any(true);
+			var page : Page := object Page {
+				pageName := doc.name.substring(1, doc.name.length() - 15) + ".usd";
+				var listSection := OrderedSet{Integer};
+				// i représente la profondeur de la section dans laquelle on doit ajouter les éléments
+				// si i = 0 c'est qu'il n'y a pas de section, on ajoute donc les éléments à la base
+				var i := 0;
+				doc.contents -> forEach (content) {
+					if (content.oclIsKindOf(markdownMM::TextContainer)) {
+						var isContenaire := false;
+						
+						if (content.oclAsType(markdownMM::TextContainer).elements -> size() = 1 
+							and content.oclAsType(markdownMM::TextContainer).oclIsTypeOf(markdownMM::Title)) {
+								
+							
+							content.oclAsType(markdownMM::TextContainer).elements -> forOne(element) {
+								
+							
+								if (element.oclIsTypeOf(markdownMM::Text)) {
+									if ((element.oclAsType(markdownMM::Text).text) = '~Section' or (element.oclAsType(markdownMM::Text).text = '/Section') ) {
+										isContenaire := true;
+									}
+								}
+							}
+						};
+						// Si on detecte un contenaire on va commencer à le créer au bon endroit
+						if (isContenaire) {
+							content.oclAsType(markdownMM::Title).elements -> forOne(elem) {
+								if (elem.oclAsType(markdownMM::Text).text= '~Section') {
+									if (i = 0) {
+										element += object usdMM::ElementContainer{ grade := content.oclAsType(markdownMM::Title).level };
+									} else {
+										// Sinon on récupère la dernière section ouverte autant de fois que nécessaire par rapport à i
+										var containerTmp : usdMM::ElementContainer := element -> last().oclAsType(usdMM::ElementContainer);
+										while (j := 1; j <= i) {
+											if (j = i) {
+												containerTmp.element += object usdMM::ElementContainer{ grade := content.oclAsType(markdownMM::Title).level };
+											} else {
+												containerTmp := containerTmp.element -> last().oclAsType(usdMM::ElementContainer);
+											};
+											j := j + 1;
+										}
+									};
+									i := i + 1;
+									// Fermeture de section, donc on décremente le compteur
+								} else if (elem.oclAsType(markdownMM::Text).text = '/Section') {
+									i := i - 1;
+								};
+							}
+						} else {
+							//Si jamais on veut des liens, buttons autre que dans un paragraphe on le peut
+							var onlyUrlBasedLink := true;
+		  					content.oclAsType(markdownMM::TextContainer).elements -> forEach(element) {
+		  						if (not element.oclIsKindOf(markdownMM::UrlBasedLink)) {
+		  							onlyUrlBasedLink := false;
+		  						}
+		  					};
+		  					// Si il n'y a que des UrlBasedLink il n'y a pas besoin de créer une paragraphe ou titre.
+		  					if (onlyUrlBasedLink) {
+		  						content.oclAsType(markdownMM::TextContainer).elements -> map mkdTextElement2usdTextElement() -> forEach(url) {
+		  							if (i = 0) {
+										element += url.oclAsType(usdMM::UrlBasedLink); 
+									} else {
+										var containerTmp : usdMM::ElementContainer := element -> last().oclAsType(usdMM::ElementContainer);
+										while (j := 1; j <= i) {
+											if (j = i) {
+												containerTmp.element += url.oclAsType(usdMM::UrlBasedLink);
+											} else {
+												containerTmp := containerTmp.element -> last().oclAsType(usdMM::ElementContainer);
+											};
+											j := j + 1;
+										}
+									};
+		  						}
+		  					} else {
+		  						// Sinon, ça va être le cas de base object2element
+		  						if (i = 0) {
+									element += content -> object2element(); 
+								} else {
+									var sectionTmp : usdMM::ElementContainer := element -> last().oclAsType(usdMM::ElementContainer);
+									while (j := 1; j <= i) {
+										if (j = i) {
+											sectionTmp.element += content -> object2element();
+										} else {
+											sectionTmp := sectionTmp.element -> last().oclAsType(usdMM::ElementContainer);
+										};
+										j := j + 1;
+									}
+								};
+		  					}
+						}
+					}
+				}
+			}
+		}
+
+
+// On prends nos Element de la page (Title, Paragraph, Container) , et on va map sur les text elements qu'il possède
+mapping markdownMM::Block::object2element() : usdMM::Element{
+	init{
+		switch {
+		
+			case (self.oclIsTypeOf(markdownMM::Title)){
+				result := object usdMM::Title{
+					grade := self.oclAsType(markdownMM::Title).level;
+					textelement += self.oclAsType(markdownMM::Title).elements -> map mkdTextElement2usdTextElement();
+					};
+					
+			};
+			
+			case (self.oclIsTypeOf(markdownMM::Paragraph)){		
+			
+					result := object usdMM::Paragraph{
+						var prepareList : markdownMM::TextElement;
+												
+						textelement += self.oclAsType(markdownMM::Paragraph).elements -> map mkdTextElement2usdTextElement();
+						
+						};
+					
+			};
+			
+		}
+	}	
+}
+
+
+// Les différents cas pour créer nos objets TextElement
+mapping markdownMM::TextElement::mkdTextElement2usdTextElement() : usdMM::TextElement{
+	
+	init{	
+		switch{
+		/* Text case */
+			
+			case(self.oclIsTypeOf(markdownMM::Text)){
+				result := object usdMM::Text{
+					text := self.oclAsType(markdownMM::Text).text;
+					
+				};
+			};
+			
+			
+			/*Composite Text Element Case */
+			case(self.oclIsTypeOf(markdownMM::Emphasis)){
+				result := object usdMM::Emphasis{
+					text := self.oclAsType(markdownMM::Emphasis).text;
+					subtext+= self.oclAsType(markdownMM::Emphasis).subtext -> map mkdTextElement2usdTextElement();
+				};
+				
+				
+			};
+			case(self.oclIsTypeOf(markdownMM::StrongEmphasis)){
+				result := object usdMM::Strong{
+					text := self.oclAsType(markdownMM::StrongEmphasis).text;
+					subtext+= self.oclAsType(markdownMM::StrongEmphasis).subtext -> map mkdTextElement2usdTextElement();
+				};
+								
+			};
+			// Si ça commence par [btn alors on va créer un bouton. Sinon lien normal
+			case(self.oclIsTypeOf(markdownMM::Link)){
+					var ur : String := self.oclAsType(markdownMM::Link).url;
+					var tit: String := self.oclAsType(markdownMM::Link).subtext -> first().oclAsType(markdownMM::Text).text;
+					
+					var isButton : Boolean = false;
+					if (tit.substring(1,4) = "[btn"){
+						isButton := true;
+					};
+
+					if (isButton){
+						result := object usdMM::Button{
+							title := self.oclAsType(markdownMM::Link).title;
+							url := self.oclAsType(markdownMM::Link).url;
+							subtext+= self.oclAsType(markdownMM::Link).subtext -> map mkdTextElement2usdTextElement();
+						};
+						
+					}
+					else{
+						result := object usdMM::Link{
+							url := self.oclAsType(markdownMM::Link).url;
+							title := self.oclAsType(markdownMM::Link).title;
+							subtext+= self.oclAsType(markdownMM::Link).subtext -> map mkdTextElement2usdTextElement();
+						};
+											
+					}
+			};
+			case(self.oclIsTypeOf(markdownMM::Image)){
+				result := object usdMM::Image{
+					url := self.oclAsType(markdownMM::Image).url;
+					title := self.oclAsType(markdownMM::Image).subtext -> first().oclAsType(markdownMM::Text).text;
+					subtext += self.oclAsType(markdownMM::Image).subtext -> map mkdTextElement2usdTextElement();
+					};
+								
+			};
+			case(self.oclIsTypeOf(markdownMM::LinkWithRef)){
+				result := object usdMM::LinkWithRef{
+					reference := self.oclAsType(markdownMM::LinkWithRef).reference;
+					subtext+= self.oclAsType(markdownMM::LinkWithRef).subtext -> map mkdTextElement2usdTextElement();
+				};
+					
+			};
+		}
+	}
+}
+
+
+
+
+
+

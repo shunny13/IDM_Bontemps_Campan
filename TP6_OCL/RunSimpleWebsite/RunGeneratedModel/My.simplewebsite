@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleWebsite:Website xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:simpleWebsite="http://www.example.org/simpleWebsite">
+  <pages name="MortalKombat" lang="fr" path="www.mkombat.com">
+    <content xsi:type="simpleWebsite:Div" Class="Cls" ID="Idds">
+      <contentInsideDiv xsi:type="simpleWebsite:Paragraph" Class="clclcls" ID="MID" content="Miaow"/>
+      <contentInsideDiv xsi:type="simpleWebsite:Image" href="www.chat.com"/>
+      <contentInsideDiv xsi:type="simpleWebsite:Link" Class="LinkTheSun" ID="Lili" targetPage="//@pages.0"/>
+    </content>
+    <content xsi:type="simpleWebsite:Div" Class="Divveve" ID="Dyv">
+      <contentInsideDiv xsi:type="simpleWebsite:Section" Class="Secs" ID="Sesesc">
+        <contentInsideSection xsi:type="simpleWebsite:Paragraph" Class="paraf" ID="NO" content="Je n'ai marre je veux arreter svp appelez maman"/>
+        <contentInsideSection xsi:type="simpleWebsite:Link" Class="Zelda" ID="Zel" targetParagraph="//@pages.0/@content.0/@contentInsideDiv.0"/>
+      </contentInsideDiv>
+      <contentInsideDiv xsi:type="simpleWebsite:Button" Class="Boubou" ID="Acné" targetParagraph="//@pages.0/@content.0/@contentInsideDiv.0"/>
+      <contentInsideDiv xsi:type="simpleWebsite:Script" Class="Thanos" ID="Egypte" src="www.monsite.com/bla.js"/>
+    </content>
+  </pages>
+</simpleWebsite:Website>

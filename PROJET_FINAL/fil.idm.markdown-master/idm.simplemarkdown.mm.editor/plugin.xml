@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated simplemarkdown -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="idm.simplemarkdown.mm.simplemarkdown.presentation.SimplemarkdownModelWizardID"
+            name="%_UI_SimplemarkdownModelWizard_label"
+            class="idm.simplemarkdown.mm.simplemarkdown.presentation.SimplemarkdownModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SimplemarkdownModelFile.gif">
+         <description>%_UI_SimplemarkdownModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated simplemarkdown -->
+      <editor
+            id="idm.simplemarkdown.mm.simplemarkdown.presentation.SimplemarkdownEditorID"
+            name="%_UI_SimplemarkdownEditor_label"
+            icon="icons/full/obj16/SimplemarkdownModelFile.gif"
+            extensions="simplemarkdown"
+            class="idm.simplemarkdown.mm.simplemarkdown.presentation.SimplemarkdownEditor"
+            contributorClass="idm.simplemarkdown.mm.simplemarkdown.presentation.SimplemarkdownActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

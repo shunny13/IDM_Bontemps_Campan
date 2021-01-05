@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/SimpleWebsite/src-gen" creationIcons="false" editDirectory="/SimpleWebsite.edit/src-gen"
+    editorDirectory="/SimpleWebsite.editor/src-gen" modelPluginID="SimpleWebsite"
+    modelName="SimpleWebsite" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>simpleWebsite.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="SimpleWebsite" disposableProviderFactory="true" ecorePackage="simpleWebsite.ecore#/">
+    <genClasses ecoreClass="simpleWebsite.ecore#//Website">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Website/pages"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Page">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Page/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Page/lang"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Page/content"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Page/path"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Content">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Content/Class"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Content/ID"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Image/href"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Image/alt"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Paragraph">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Paragraph/content"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Div">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Div/contentInsideDiv"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Link">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Link/targetPage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Link/targetParagraph"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Section">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Section/contentInsideSection"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Button">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Button/targetPage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleWebsite.ecore#//Button/targetParagraph"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleWebsite.ecore#//Script">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleWebsite.ecore#//Script/src"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

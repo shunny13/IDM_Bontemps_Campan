@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/idm.simplemarkdown.mm/src-gen" creationIcons="false"
+    editDirectory="/idm.simplemarkdown.mm.edit/src-gen" editorDirectory="/idm.simplemarkdown.mm.editor/src-gen"
+    modelPluginID="idm.simplemarkdown.mm" modelName="Simplemarkdown" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>simplemarkdown.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Simplemarkdown" basePackage="idm.simplemarkdown.mm" disposableProviderFactory="true"
+      ecorePackage="simplemarkdown.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="simplemarkdown.ecore#//TableCellAlignement">
+      <genEnumLiterals ecoreEnumLiteral="simplemarkdown.ecore#//TableCellAlignement/LEFT"/>
+      <genEnumLiterals ecoreEnumLiteral="simplemarkdown.ecore#//TableCellAlignement/RIGHT"/>
+      <genEnumLiterals ecoreEnumLiteral="simplemarkdown.ecore#//TableCellAlignement/CENTER"/>
+    </genEnums>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Document">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//Document/contents"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Document/name"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Block"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Paragraph"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Title">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Title/level"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Text/text"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//StrongEmphasis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//StrongEmphasis/text"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TextElement"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Code"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//BulletList"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//BulletListItem"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Link"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Folder">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Folder/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//Folder/documents"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//List">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//List/items"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//ListItem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//ListItem/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//OrderedList"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//OrderedListItem"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//BlockQuote">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//BlockQuote/contents"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Image"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Emphasis">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Emphasis/text"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//CodeBlock">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//CodeBlock/codelines"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//HorizontalLine"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//ListItemElement"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TextContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//TextContainer/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//CompositeTextElement">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//CompositeTextElement/subtext"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//CodeLine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//CodeLine/text"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//LinkWithRef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//LinkWithRef/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//Reference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Reference/reference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Reference/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//Reference/title"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//UrlBasedLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//UrlBasedLink/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//UrlBasedLink/title"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableBlock">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//TableBlock/sections"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableRow">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//TableRow/cells"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//TableRow/rowNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableHead"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableBody"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableSeparator"/>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableCell">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//TableCell/isHeader"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//TableCell/span"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simplemarkdown.ecore#//TableCell/alignement"/>
+    </genClasses>
+    <genClasses ecoreClass="simplemarkdown.ecore#//TableSection">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simplemarkdown.ecore#//TableSection/rows"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

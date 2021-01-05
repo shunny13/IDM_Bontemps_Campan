@@ -1,0 +1,102 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('http://www.example.org/simpleWebsite')]
+
+
+[**
+ * The documentation of the template generatePage.
+ * @param aPage
+ */]
+[template public generatePage(aPage : Page)]
+[comment @main/]"
+[file ('idm/website/'+aPage.name+'.html', false, 'UTF-8')]
+
+<!doctype html>
+<html lang="[aPage.lang/]">
+<head>
+	<meta charset="utf-8">
+	<title>[aPage.name/]</title>
+</head>
+<body>
+[for (element : Content | aPage.content)]
+[generateContent(element)/]
+[/for]
+</body>
+</html>
+
+[/file]
+[/template]
+
+[template public generateContent(element : Content)]
+[let div : Div = element]
+	 [generateDiv(div)/]
+[/let]
+[let section : Section = element]
+	 [generateSection(section)/]
+[/let]
+[let img : Image = element]
+	 [generateImg(img)/]
+[/let]
+[let paragraph : Paragraph = element]
+	 [generateParg(paragraph)/]
+[/let]
+[let link : Link = element]
+	 [generateLink(link)/]
+[/let]
+[let script : Script = element]
+	 [generateScript(script)/]
+[/let]
+[let button : Button = element]
+	 [generateButton(button)/]
+[/let]
+[/template]
+[template public generateDiv(myDiv : Div)]
+<div id="[myDiv.ID/]" class="[myDiv.Class/]">
+[for (element : Content | myDiv.contentInsideDiv)]
+[generateContent(element)/]
+[/for]
+</div>
+[/template]
+[template public generateSection(mySection : Section)]
+<section id="[mySection.ID/]" class="[mySection.Class/]">
+[for (element : Content | mySection.contentInsideSection)]
+[generateContent(element)/]
+[/for]
+</section>
+[/template]
+[template public generateImg(myImg : Image)]
+<img id="[myImg.ID/]" class="[myImg.Class/]" src="[myImg.href/]" alt="[myImg.alt/]">
+[/template]
+[template public generateParg(myPara : Paragraph)]
+<p id="[myPara.ID/]" class="[myPara.Class/]">[myPara.content/]
+</p>
+[/template]
+[template public generateLink(myLink : Link)]
+[if(myLink.targetPage.oclIsUndefined() )]
+<a class="[myLink.Class/]" id="[myLink.ID/]" href="#[myLink.targetParagraph.ID/]">Link To Paragraph
+</a>
+[/if]
+[if(myLink.targetParagraph.oclIsUndefined() )]
+<a class="[myLink.Class/]" id="[myLink.ID/]" href="[myLink.targetPage.path/]">Link To Page
+</a>
+[/if]
+[/template]
+[template public generateScript(myScript : Script)]
+<script id="[myScript.ID/]" class="[myScript.Class/]"> src="[myScript.src/]" type="text/javascript"
+</script>
+[/template]
+[template public generateButton(myButt : Button)]
+[if(myButt.targetPage.oclIsUndefined() )]
+<button class="[myButt.Class/]" id="[myButt.ID/]" onclick="window.location.href='#[myButt.targetParagraph.ID/]';">
+Button to paragraph
+</button>
+[/if]
+[if(myButt.targetParagraph.oclIsUndefined() )]
+<button onclick="window.location.href="[myButt.targetPage.path/]" = class="[myButt.Class/]" id="[myButt.ID/]"
+Button to page
+</button>
+[/if]
+[/template]
+
